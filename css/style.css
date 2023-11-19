@@ -1,0 +1,27 @@
+@font-face {
+    font-family: Karrik Italic;
+    src: url(/fonts/Karrik-Italic.ttf);
+}
+@font-face {
+    font-family: Karrik;
+    src: url(/fonts/Karrik-Regular.ttf);
+}
+
+* {
+    box-sizing: border-box;
+    font-family: 'Karrik', sans-serif;
+}
+
+body {
+    margin: 0;   
+}
+
+ul, li {
+    list-style-type: none;
+}
+
+#navbar ul {
+    display: flex;
+    justify-content: space-around;
+}
+
