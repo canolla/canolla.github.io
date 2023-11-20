@@ -10,6 +10,7 @@
 * {
     box-sizing: border-box;
     font-family: 'Karrik', sans-serif;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -42,6 +43,11 @@ ul, li {
     width: 40%;
 }
 
+#navbar li:hover {
+    color: #EB5E28;
+    cursor: pointer;
+}
+
 /* header */
 
 #header-section {
@@ -64,13 +70,16 @@ ul, li {
 #work-display h1 {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: left;
     font-size: 4rem;
+    margin-left: 3rem;
 }
 
 #work-display h2 {
     font-size: 2rem;
 }
+
+/* project 1 */
 
 .project {
     display: flex;
@@ -79,11 +88,16 @@ ul, li {
     justify-content: baseline;
     width: 60%;
     margin-left: 3rem;
+    margin-block: 3rem;
 }
 
+.project img:hover {
+    transform: scale(0.99);
+}
 .project img {
     width: 100%;
     border-radius: 20px;
+    transition: transform 0.3s ease-out;
 }
 
 .about-tags {
@@ -123,4 +137,85 @@ padding-block: 0;
     padding-inline: 5rem;
     margin-block: 0;
     padding-block: 0;
+}
+
+/* project 2 */
+
+.project2 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: flex-end;
+    width: 60%;
+    margin-left: auto;
+    margin-right: 3rem;
+    margin-block: 3rem;
+}
+
+.project2 img {
+    width: 100%;
+    border-radius: 20px;
+    transition: transform 0.3s ease-out;
+}
+
+.project2 img:hover {
+    transform: scale(0.99);
+}
+
+.project3 {
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    justify-content: baseline;
+    width: 60%;
+    margin-left: 3rem;
+    margin-block: 3rem;
+}
+
+.project3 img {
+    width: 100%;
+    border-radius: 20px;
+    transition: transform 0.3s ease-out;
+}
+
+.project3 img:hover {
+    transform: scale(0.99);
+}
+
+#contact {
+    display: flex;
+    align-items: center;
+}
+
+#contact h1 {
+    display: flex;
+    align-items: center;
+    justify-content: baseline;
+    font-size: 4rem;
+}
+
+/* footer */
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 4rem;
+    background-color: #EB5E28;
+    color: #FFFCF2;
+}
+
+.images {
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+width: 60%;
+margin-inline: auto;
+
+}
+
+.images img{
+    width: 100%;
+    margin-inline: auto;
 }
