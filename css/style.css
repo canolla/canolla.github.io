@@ -205,6 +205,9 @@ footer {
     color: #FFFCF2;
 }
 
+
+/* Nourish Network */
+
 .images {
 display: flex;
 flex-direction: column;
@@ -218,4 +221,118 @@ margin-inline: auto;
 .images img{
     width: 100%;
     margin-inline: auto;
+    margin-block: 3rem;
+}
+
+.project-intro {
+    margin-top: 3rem;
+}
+
+.project-title h1 {
+    font-size: 5rem;
+    margin: 0;
+}
+
+.project-title {
+    white-space: nowrap;
+    margin-left: 3rem;
+}
+
+.heading-info {
+    display: flex;
+}
+
+.para-1 {
+    padding-inline: 7rem;
+}
+
+/* image overlay */
+
+.enlargeable {
+    width: 200px; /* Set initial width */
+    height: auto;
+    margin: 10px;
+    cursor: pointer;
+    transition: width 0.3s ease; /* Add a smooth transition effect */
+}
+
+.enlarged {
+    width: 400px; /* Set enlarged width */
+}
+
+.overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.3s ease; /* Add smooth transition for opacity */
+    pointer-events: none; /* Make the overlay not block pointer events when hidden */
+}
+
+.overlay.show {
+    opacity: 1;
+    pointer-events: auto; /* Enable pointer events when shown */
+}
+
+#enlargedImg {
+    max-width: 90%;
+    max-height: 90%;
+}
+
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 30px;
+    color: #FFFCF2;
+    cursor: pointer;
+}
+
+/* side menu */
+
+.side-menu {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    padding: 20px;
+}
+
+.side-menu ul {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 10px; /* Add some space between links and the line */
+}
+
+.side-menu li {
+    margin-bottom: 10px;
+}
+
+.side-menu a {
+    text-decoration: none;
+    color: #EB5E28;
+    opacity: 60%;
+    font-size: 0.8rem;
+    transition: opacity 0.3s ease;
+
+}
+
+.side-menu a:hover {
+    opacity: 100%;
+}
+
+.side-menu a.active {
+    opacity: 1;
+    font-size: 1.2em; /* Adjust the font size for the active link */
+}
+
+
+
+.content-section {
+    margin-top: 60px; /* Adjust based on the side menu height */
 }
