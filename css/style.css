@@ -6,16 +6,26 @@
     font-family: Karrik;
     src: url(/fonts/Karrik-Regular.ttf);
 }
+@font-face {
+    font-family: Basteleur Light;
+    src: url(/fonts/Basteleur-Moonlight.ttf);
+}
+@font-face {
+    font-family: Basteleur Bold;
+    src: url(/fonts/Basteleur-Bold.ttf);
+}
 
 * {
     box-sizing: border-box;
     font-family: 'Karrik', sans-serif;
     scroll-behavior: smooth;
+    font-family: Basteleur Light;
 }
 
 body {
     margin: 0;   
     background-color: #FFFCF2;
+    font-family: Basteleur Light;
 }
 
 ul, li {
@@ -57,6 +67,7 @@ ul, li {
 #header-section h1 {
     font-size: 3rem;
     width: 50%;
+    font-family: Basteleur Light;
 }
 
 /* projects */
@@ -301,6 +312,7 @@ margin-inline: auto;
     bottom: 0;
     right: 0;
     padding: 20px;
+    text-align: right;
 }
 
 .side-menu ul {
@@ -316,7 +328,6 @@ margin-inline: auto;
 .side-menu a {
     text-decoration: none;
     color: #EB5E28;
-    opacity: 60%;
     font-size: 0.8rem;
     transition: opacity 0.3s ease;
 
@@ -326,13 +337,24 @@ margin-inline: auto;
     opacity: 100%;
 }
 
-.side-menu a.active {
+.larger-text {
+    font-size: 1em; /* Default font size */
+    transition: font-size 0.5s ease, opacity 0.5s ease;
+    opacity: 60%;
+}
+
+.larger-text.active {
+    font-size: 1.5em; /* Adjust the font size for the active state */
     opacity: 1;
-    font-size: 1.2em; /* Adjust the font size for the active link */
 }
 
 
 
 .content-section {
     margin-top: 60px; /* Adjust based on the side menu height */
+}
+
+
+#process-section {
+    padding-top: 6rem;
 }
