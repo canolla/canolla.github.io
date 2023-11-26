@@ -1,12 +1,4 @@
 @font-face {
-    font-family: Karrik Italic;
-    src: url(/fonts/Karrik-Italic.ttf);
-}
-@font-face {
-    font-family: Karrik;
-    src: url(/fonts/Karrik-Regular.ttf);
-}
-@font-face {
     font-family: Basteleur Light;
     src: url(/fonts/Basteleur-Moonlight.ttf);
 }
@@ -17,15 +9,14 @@
 
 * {
     box-sizing: border-box;
-    font-family: 'Karrik', sans-serif;
     scroll-behavior: smooth;
-    font-family: Basteleur Light;
+    font-family: 'Basteleur Light', sans-serif;
 }
 
 body {
     margin: 0;   
-    background-color: #FFFCF2;
-    font-family: Basteleur Light;
+    background-color: #252422;
+    color: #FFFCF2;
 }
 
 ul, li {
@@ -116,7 +107,8 @@ ul, li {
 }
 
 .about-tags span{
-    color: #EB5E28;
+    color: #FFFCF2;
+    background-color: #EB5E28;
     border: solid 2px;
     border-radius: 20px;
     display: inline-block;
@@ -257,6 +249,10 @@ margin-inline: auto;
     padding-inline: 7rem;
 }
 
+.overview {
+    margin-inline: 3rem;
+}
+
 /* image overlay */
 
 .enlargeable {
@@ -354,7 +350,78 @@ margin-inline: auto;
     margin-top: 60px; /* Adjust based on the side menu height */
 }
 
-
 #process-section {
     padding-top: 6rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
+
+.website-link p{
+    text-decoration: underline;
+    font-size: 1.3rem;
+    display: inline-block;
+}
+
+.website-link p:hover {
+    color: #EB5E28;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+.the-brief {
+    max-width: 60%;
+    background-color: #EB5E28;
+    padding: 3rem;
+    border-radius: 3rem;
+    color: #FFFCF2;
+    margin-block: 3rem;
+    border: solid 3px;
+}
+.process-content {
+    max-width: 60%;
+    border-radius: 3rem;
+    padding: 3rem;
+    background: #403D39;
+    color: #FFFCF2;
+    margin-block: 3rem;
+    border: solid 3px;
+}
+
+.process-content img{
+    max-width: 100%;
+    border-radius: 3rem;
+}
+
+.process-content li {
+    margin-block: 3rem;
+}
+
+.process-row {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    width: 70%;
+}
+
+.next-project {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.problem-solution {
+    display: flex;
+    max-width: 60%;
+    gap: 3rem;
+}
+
+#problem {
+    color: #EB5E28;
+}
+
+#solution {
+    color: aquamarine;
+}
+
