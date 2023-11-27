@@ -226,6 +226,11 @@ margin-inline: auto;
     margin-inline: auto;
     margin-block: 3rem;
 }
+video{
+    width: 100%;
+    margin-inline: auto;
+    margin-block: 3rem;
+}
 
 .project-intro {
     margin-top: 3rem;
@@ -357,18 +362,6 @@ margin-inline: auto;
     align-items: center;
 }
 
-.website-link p{
-    text-decoration: underline;
-    font-size: 1.3rem;
-    display: inline-block;
-}
-
-.website-link p:hover {
-    color: #EB5E28;
-    cursor: pointer;
-    transition: color 0.3s;
-}
-
 .the-brief {
     max-width: 60%;
     background-color: #EB5E28;
@@ -377,6 +370,7 @@ margin-inline: auto;
     color: #FFFCF2;
     margin-block: 3rem;
     border: solid 3px;
+    text-align: center;
 }
 .process-content {
     max-width: 60%;
@@ -425,3 +419,6 @@ margin-inline: auto;
     color: aquamarine;
 }
 
+.stylescape {
+    border-radius: 1rem !important;
+}
