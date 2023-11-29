@@ -55,3 +55,31 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 
+//scroll indicator & navbar
+
+let prevScrollPos = window.pageYOffset;
+
+window.onscroll = function () {
+    let windowScroll = document.documentElement.scrollTop;
+    let windowHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+    let scrollAmount = (windowScroll / windowHeight) * 100;
+
+    // Update the width of the progress bar
+    document.getElementById("mybar").style.width = scrollAmount + "%";
+
+    // Toggle the visibility of the navbar based on the scroll direction
+    const navbar = document.getElementById("navbar");
+    const hideThreshold = 200; // Adjust this value based on your requirements
+
+    if (windowScroll > prevScrollPos) {
+        // Scrolling down, hide the navbar
+        navbar.classList.add("hidden");
+    } else {
+        // Scrolling up, show the navbar
+        navbar.classList.remove("hidden");
+    }
+
+    // Update the previous scroll position
+    prevScrollPos = windowScroll;
+};
+
