@@ -1,16 +1,24 @@
 @font-face {
-    font-family: Basteleur Light;
-    src: url(/fonts/Basteleur-Moonlight.ttf);
+    font-family: Satoshi-Medium;
+    src: url(/fonts/Satoshi-Medium.ttf);
 }
 @font-face {
-    font-family: Basteleur Bold;
-    src: url(/fonts/Basteleur-Bold.ttf);
+    font-family: Satoshi-Bold;
+    src: url(/fonts/Satoshi-Bold.ttf);
+}
+@font-face {
+    font-family: Cabinet Grotesk Medium;
+    src: url(/fonts/CabinetGrotesk-Medium.ttf);
 }
 
 * {
     box-sizing: border-box;
     scroll-behavior: smooth;
-    font-family: 'Basteleur Light', sans-serif;
+    font-family: 'satoshi-medium', sans-serif;
+    cursor: none;
+}
+* h1 {
+    font-family: Cabinet Grotesk Medium;
 }
 
 body {
@@ -18,6 +26,8 @@ body {
     background-color: #252422;
     color: #FFFCF2;
     padding-top: 4rem;
+    overflow-x: hidden;
+
 }
 
 ul, li {
@@ -60,7 +70,7 @@ ul, li {
     z-index: 9998;
 }
 
-#navbar.hidden {
+#navbar.hidden2 {
     top: -90px; /* or any value to move it off the viewport */
     transition: top 0.3s; /* Add a transition for a smoother effect */
 }
@@ -70,25 +80,51 @@ ul, li {
     display: flex;
     justify-content: space-around;
     width: 40%;
+    list-style: none;
 }
 
-#navbar li:hover {
+#navbar a {
+    color: #FFFCF2;
+    text-decoration: none;
+}
+
+#navbar a:hover {
     color: #EB5E28;
-    cursor: pointer;
 }
 
 /* header */
 
 #header-section {
-    padding: 1rem;
-    height: 50rem;
+    padding-top: 6rem;
+    height: 45rem;
+    padding-inline: 7rem;
+    position: relative;
 }
 
 #header-section h1 {
-    font-size: 3rem;
-    width: 50%;
-    font-family: Basteleur Light;
+    font-size: 4.5vw;
+    width: 60%;
+    margin-bottom: 0;
 }
+
+#header-section p {
+    font-family: satoshi-medium;
+}
+
+#checkout-work {
+    margin-top: 3rem;
+}
+
+#checkout-work i {
+    transition: color ease-in-out 0.3s, transform ease-in-out 0.3s; /* Add transition properties */
+    color: #FFFCF2;
+}
+
+#checkout-work i:hover{
+    color: #EB5E28;
+    transform: translateY(5px);
+}
+
 
 /* work */
 
@@ -96,6 +132,7 @@ ul, li {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    padding-top: 3rem;
 }
 
 #work-display h1 {
@@ -112,7 +149,7 @@ ul, li {
 
 /* project 1 */
 
-.project {
+#project {
     display: flex;
     flex-direction: column;
     align-items: baseline;
@@ -122,13 +159,17 @@ ul, li {
     margin-block: 3rem;
 }
 
-.project img:hover {
+#project img:hover {
     transform: scale(0.99);
+     opacity: 1; 
 }
-.project img {
+
+#project img {
     width: 100%;
     border-radius: 20px;
-    transition: transform 0.3s ease-out;
+    transition: 0.3s ease-in-out;
+    top: 0;
+    left: 0;
 }
 
 .about-tags {
@@ -173,7 +214,7 @@ padding-block: 0;
 
 /* project 2 */
 
-.project2 {
+#project2 {
     display: flex;
     flex-direction: column;
     align-items: flex-end;
@@ -184,17 +225,17 @@ padding-block: 0;
     margin-block: 3rem;
 }
 
-.project2 img {
+#project2 img {
     width: 100%;
     border-radius: 20px;
     transition: transform 0.3s ease-out;
 }
 
-.project2 img:hover {
+#project2 img:hover {
     transform: scale(0.99);
 }
 
-.project3 {
+#project3 {
     display: flex;
     flex-direction: column;
     align-items: baseline;
@@ -204,13 +245,13 @@ padding-block: 0;
     margin-block: 3rem;
 }
 
-.project3 img {
+#project3 img {
     width: 100%;
     border-radius: 20px;
     transition: transform 0.3s ease-out;
 }
 
-.project3 img:hover {
+#project3 img:hover {
     transform: scale(0.99);
 }
 
@@ -227,11 +268,11 @@ padding-block: 0;
 
 #contact {
     display: flex;
-    align-items: center;
+    flex-direction: column;
 }
 
 #contact h1 {
-    font-size: 4rem;
+    font-size: 4vw;
 }
 
 /* footer */
@@ -241,8 +282,10 @@ footer {
     justify-content: center;
     align-items: center;
     height: 4rem;
-    background-color: #EB5E28;
-    color: #FFFCF2;
+    width: 100%;
+    background-color: #252422;
+    color: #EB5E28;
+    border: solid #EB5E28 3px;
 }
 
 
@@ -301,7 +344,6 @@ video{
     width: 200px; /* Set initial width */
     height: auto;
     margin: 10px;
-    cursor: pointer;
     transition: width 0.3s ease; /* Add a smooth transition effect */
 }
 
@@ -340,7 +382,6 @@ video{
     right: 15px;
     font-size: 30px;
     color: #FFFCF2;
-    cursor: pointer;
 }
 
 /* side menu */
@@ -458,4 +499,138 @@ video{
 
 .stylescape {
     border-radius: 1rem !important;
+}
+
+#about-intro {
+    width: 50%;
+    margin-left: auto;
+    margin-top: 10rem;
+}
+
+.orange-text {
+    color: #EB5E28;
+}
+
+#about-me {
+    padding-inline: 3rem;
+}
+
+.hidden {
+    opacity: 0;
+    transition: all 1s;
+    filter: blur(5px);
+}
+
+.show {
+    opacity: 1;
+    filter: blur();
+    transform: translateX(0);
+}
+
+@media(prefers-reduced-motion) {
+    .hidden {
+        transition: none;
+    }
+}
+
+#about-me {
+    padding-inline: 7rem;
+}
+
+.hobbies h2{
+    font-size: 3rem;
+}
+
+.hobbies {
+    width: 100%;
+}
+
+.hobbies-lists {
+    width: 100%;
+    white-space: nowrap;
+    padding-inline: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hobbies-lists ul{
+    display: flex;
+    padding-inline: auto;
+}
+
+.hobbies-lists li{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left: 1rem;
+}
+.hobbies-lists li:nth-child(1){
+    margin-left: 0rem;
+}
+
+.hobbies-lists li h3 {
+    margin-left: 7px;
+}
+
+.about-me-desc p{
+    width: 30rem;
+}
+
+.about-me-layout {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.cursor {
+    width: 20px;
+    height: 20px;
+    opacity: 0.7;
+    background-color: #FFFCF2;
+    border-radius: 50%;
+    position: absolute;
+    transition-duration: 200ms;
+    transition-timing-function: ease-out;
+    pointer-events: none;
+    z-index: 99999;
+}
+
+#contact {
+    padding-inline: 7rem;
+    height: 25rem;
+    justify-content: center;
+}
+
+.contact-email {
+    margin-inline: auto;
+}
+
+.contact-email h1{
+    margin-inline: auto;
+    text-decoration: underline;
+    color: #EB5E28;
+}
+.contact-email a{
+    text-decoration: none;
+}
+
+.bullet-point {
+    width: 10px;
+    height: 10px;
+    opacity: 1;
+    background-color: #EB5E28;
+    border-radius: 50%;
+}
+
+.background-circle {
+    position: absolute;
+    top: 0rem;
+    right: -5rem;
+    width: 50vw; /* Adjust the viewport width based on your design */
+    height: 50vw; /* Adjust the viewport width based on your design */
+    opacity: 1;
+    background-color: #EB5E28;
+    border-radius: 50%;
+    z-index: -1;
 }

@@ -73,13 +73,35 @@ window.onscroll = function () {
 
     if (windowScroll > prevScrollPos) {
         // Scrolling down, hide the navbar
-        navbar.classList.add("hidden");
+        navbar.classList.add("hidden2");
     } else {
         // Scrolling up, show the navbar
-        navbar.classList.remove("hidden");
+        navbar.classList.remove("hidden2");
     }
 
     // Update the previous scroll position
     prevScrollPos = windowScroll;
 };
+
+
+//reveal
+
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+        console.log(entry)
+        if (entry.isIntersecting) {
+            entry.target.classList.add('show');
+        } 
+    });
+});
+
+const hiddenElements = document.querySelectorAll('.hidden');
+hiddenElements.forEach((el) => observer.observe(el));
+
+
+const cursor = document.querySelector('.cursor');
+
+document.addEventListener('mousemove', e => {
+    cursor.setAttribute("style", "top: "+(e.pageY - 10)+"px; left: "+(e.pageX - 10)+"px;")
+})
 

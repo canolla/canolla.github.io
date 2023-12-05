@@ -5,11 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Homepage</title>
     <link rel="stylesheet" href="/css/style.css">
-    <script src="/script.js"></script>
+    <script defer src="/script.js"></script>
+    <script src="https://kit.fontawesome.com/6799ae773f.js"
+     crossorigin="anonymous"></script>
 </head>
 
 <body>
-    <div class="container">
+    <div class="cursor"></div>
+        <div class="container">
         <div class="progress-bar" id="mybar"></div>
       </div>
     </div>
@@ -18,21 +21,32 @@
     <p>Lewis Connolly</p>
 </div>
 <ul>
-    <li>Work</li>
-    <li>About Me</li>
-    <li>Contact</li>
+    <li><a href="/index.html#work-display">Work</a></li>
+    <li><a href="/index.html#about-me">About Me</a></li>
+    <li><a href="index.html#contact">Contact</a></li>
 </ul>
 </div>
 
 <section id="header-section">
-    <h1>Hey! I'm Lewis a UX/UI Designer based in Christchurch,<br>New Zealand</h1>
+    <div class="hidden">
+        <h1>Hey I'm Lewis,<br> a <span class="orange-text">Product Designer</span></h1>
+        <p>(Christchurch, New Zealand)</p>
+    </div>
+    <div class="background-circle">
+    </div>
+    <div class="hidden" id="about-intro">
+        <p>Currently pursuing a Bachelor of Media Design specialising in UX/UI Design at Media Design School and set to graduate in November 2024. Throughout my time so far I've worked on projects which have helped me build a solid base for interface design and development. I'm now seeking entry-level or internship opportunities where I could gain further experience :)</p>
+    </div>
+    <div id="checkout-work" class="hidden">
+        <a href="#work-display"><i class="fa-solid fa-arrow-down fa-2xl"></i></a>    
+    </div>
 </section>
 
 <section id="work-display">
-<h1>Work</h1>
-<div class="project">
+    <h1>Work</h1>
+<div class="hidden" id="project">
     <a href="/nourishnetwork.html">
-    <img src="/img/nourish-network/nourish-network-cover.webp" alt="">
+    <img class="cover-img" src="/img/nourish-network/nourish-network-cover.webp" alt="">
     </a>
     <div class="about-tags">
         <span>
@@ -57,8 +71,10 @@
     </div>
     
 </div>
-<div class="project2">
-    <img src="/img/Slide 1.png" alt="">
+<div class="hidden" id="project2">
+    <a href="/trailranger.html">
+        <img src="/img/nourish-network/campaign-timeline.webp" alt="">
+    </a>
     <div class="about-tags">
         <span>
     <p>
@@ -78,11 +94,11 @@
     </div>
     <div class="about-project">
         <h2>TrailRanger</h2>
-        <p>A network of food distributors brought together through charity</p>
+        <p>Creating a digital solution for encouraging outdoor exploration via academic research</p>
     </div>
     
 </div>
-<div class="project3">
+<div class="hidden" id="project3">
     <img src="/img/wrr/wrr-cover.webp" alt="">
     <div class="about-tags">
         <span>
@@ -103,7 +119,7 @@
     </div>
     <div class="about-project">
         <h2>Woodend Road Relief</h2>
-        <p>A network of food distributors brought together through charity</p>
+        <p>Providing a platform for Woodend locals to be heard</p>
     </div>
     
 </div>
@@ -111,12 +127,41 @@
    
 <section id="about-me">
     <h1>About Me</h1>
+    
+    <div class="about-me-layout">
+
+    <div class="hobbies">
+        <div class="hobbies-lists">
+            <ul>
+                    <li><div class="bullet-point"></div><h3>Rug Tufting</h3></li>
+                    <li><div class="bullet-point"></div><h3>Bouldering</h3></li>
+                    <li> <div class="bullet-point"></div><h3>Basketball</h3></li>
+                    <li><div class="bullet-point"></div><h3>Outdoors</h3></li>
+                    <li><div class="bullet-point"></div><h3>Bob</h3></li>    
+                <li><div class="bullet-point"></div><h3>Travelling</h3></li>
+                <li><div class="bullet-point"></div><h3>Drawing</h3></li>
+                <li><div class="bullet-point"></div><h3>Reading</h3></li>
+                <li><div class="bullet-point"></div><h3>Dogs</h3></li>
+                <li><div class="bullet-point"></div><h3>Film</h3></li>
+            </ul>
+        </div>
+
+    </div>
+    <div class="about-me-desc">
+        <p>
+            When I'm not in front of a computer screen I usually like to get out and be active. Basketball has always been my favourite sport and I'm always keen to join a social team. I also like to experiment with other random creative mediums, and recently I've become more interested in taking videos of the outdoors while I'm walking or exploring somewhere new.
+        </p>
+    
+    </div>
+
+</div>
+
 </section>
 
 <section id="contact">
     <h1>Contact</h1>
-    <div>
-        <p>Block of stuff here</p>
+    <div class="contact-email">
+        <a href="mailto: lewisjconnollydesign@gmail.com"><h1>lewisjconnollydesign@gmail.com</h1></a>
     </div>
 </section>
 
