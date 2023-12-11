@@ -272,7 +272,12 @@ padding-block: 0;
 }
 
 #contact h1 {
-    font-size: 4vw;
+font-size: 4vw;
+}
+
+#contact h2 {
+margin-inline: auto;
+color: #EB5E28;
 }
 
 /* footer */
