@@ -132,7 +132,7 @@ ul, li {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding-top: 3rem;
+    padding-top: 8rem;
 }
 
 #work-display h1 {
