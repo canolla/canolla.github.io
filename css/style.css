@@ -112,7 +112,7 @@ ul, li {
 }
 
 #checkout-work {
-    margin-top: 3rem;
+    margin-top: 2rem;
 }
 
 #checkout-work i {
@@ -510,6 +510,7 @@ video{
     width: 50%;
     margin-left: auto;
     margin-top: 10rem;
+    max-width: 40rem;
 }
 
 .orange-text {
