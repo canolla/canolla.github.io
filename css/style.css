@@ -493,6 +493,18 @@ video{
     justify-content: center;
 }
 
+.next-project a { 
+    text-decoration: none;
+    color: #FFFCF2;
+    font-size: 3rem;
+    font-weight: 600;
+}
+
+.next-project a:hover { 
+    color: #EB5E28;
+}
+
+
 .problem-solution {
     display: flex;
     max-width: 60%;
