@@ -495,13 +495,13 @@ video{
 
 .next-project a { 
     text-decoration: none;
-    color: #FFFCF2;
+    color: #EB5E28;
     font-size: 3rem;
     font-weight: 600;
 }
 
 .next-project a:hover { 
-    color: #EB5E28;
+    color: #FFFCF2;
 }
 
 
