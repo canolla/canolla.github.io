@@ -669,3 +669,55 @@ video{
     border-radius: 50%;
     z-index: -1;
 }
+
+/* TrailRanger */
+
+.pdf {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .pdf a {
+    text-decoration: underline;
+    color: #EB5E28;
+    margin: 0;
+  }
+
+  .pdf :hover {
+    color: #FFFCF2;
+  }
+
+  .pdf img {
+    max-width: 80%;
+    margin-top: 0;
+  }
+
+  .pdf h2 {
+    margin: 0;
+  }
+
+  .walkthrough-vid {
+    max-width: 20rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.walkthrough-vid video {
+    margin-block: 1rem;
+}
+.walkthrough-vid h2 {
+    margin-block: 0;
+}
+
+.process-content a {
+    color: #EB5E28;
+    text-decoration: underline;
+}
+
+.process-content a:hover {
+    color: #FFFCF2;
+}
