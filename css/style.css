@@ -61,7 +61,7 @@ ul, li {
     width: 100%;
     background-color: #252422;
     color: #FFFCF2;
-    border-bottom: solid #FFFCF2 1px;
+    border-bottom: solid #EB5E28 1px;
     padding-block: 1rem;
     padding-inline: 4rem;
     transition: top 0.3s;
@@ -100,7 +100,7 @@ ul, li {
 /* header */
 
 #header-section {
-    padding-top: 6rem;
+    padding-top: 0rem;
     height: 45rem;
     padding-inline: 7rem;
     position: relative;
@@ -184,7 +184,6 @@ ul, li {
 .about-tags span{
     color: #FFFCF2;
     background-color: #EB5E28;
-    border: solid 2px;
     border-radius: 20px;
     display: inline-block;
     padding-inline: 0.7rem;
@@ -295,7 +294,7 @@ footer {
     width: 100%;
     background-color: #252422;
     color: #EB5E28;
-    border: solid #EB5E28 3px;
+    border: solid #EB5E28 1px;
 }
 
 
@@ -546,6 +545,11 @@ video{
     opacity: 0;
     transition: all 1s;
     filter: blur(5px);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    padding-bottom: 3rem;
 }
 
 .show {
@@ -667,7 +671,6 @@ video{
     opacity: 1;
     background-color: #EB5E28;
     border-radius: 50%;
-    z-index: -1;
 }
 
 /* TrailRanger */
