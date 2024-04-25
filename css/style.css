@@ -6,19 +6,12 @@
     font-family: Satoshi-Bold;
     src: url(/fonts/Satoshi-Bold.ttf);
 }
-@font-face {
-    font-family: Cabinet Grotesk Medium;
-    src: url(/fonts/CabinetGrotesk-Medium.ttf);
-}
 
 * {
     box-sizing: border-box;
     scroll-behavior: smooth;
     font-family: 'satoshi-medium', sans-serif;
     cursor: none;
-}
-* h1 {
-    font-family: Cabinet Grotesk Medium;
 }
 
 body {
@@ -73,7 +66,7 @@ ul, li {
 
 #navbar.hidden2 {
     top: -90px; /* or any value to move it off the viewport */
-    transition: top 0.3s; /* Add a transition for a smoother effect */
+    transition: top 0.5s; /* Add a transition for a smoother effect */
 }
 
 
@@ -100,24 +93,30 @@ ul, li {
 /* header */
 
 #header-section {
-    padding-top: 0rem;
-    height: 45rem;
+    padding-top: 5rem;
     padding-inline: 7rem;
     position: relative;
 }
 
 #header-section h1 {
     font-size: 4.5vw;
+    font-weight: 500;
     width: 60%;
     margin-bottom: 0;
+    white-space: nowrap;
 }
 
-#header-section p {
+#about-intro p {
     font-family: satoshi-medium;
+    font-size: 1.3vw;
 }
+
+
 
 #checkout-work {
     margin-top: 2rem;
+    width: fit-content;
+
 }
 
 #checkout-work i {
@@ -137,7 +136,6 @@ ul, li {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding-top: 8rem;
 }
 
 #work-display h1 {
@@ -145,6 +143,7 @@ ul, li {
     align-items: center;
     justify-content: left;
     font-size: 4rem;
+    font-weight: 500;
     margin-left: 3rem;
 }
 
@@ -268,6 +267,7 @@ padding-block: 0;
 #about-me h1 {
     margin-left: auto;
     font-size: 4rem;
+    font-weight: 500;
 }
 
 #contact {
@@ -327,6 +327,7 @@ video{
 
 .project-title h1 {
     font-size: 5rem;
+    font-weight: 400;
     margin: 0;
 }
 
@@ -456,17 +457,15 @@ video{
     border-radius: 3rem;
     color: #FFFCF2;
     margin-block: 3rem;
-    border: solid 3px;
     text-align: center;
 }
 .process-content {
     max-width: 60%;
     border-radius: 3rem;
     padding: 3rem;
-    background: #403D39;
     color: #FFFCF2;
     margin-block: 3rem;
-    border: solid 3px;
+    border: solid 1px;
 }
 
 .process-content img{
@@ -523,9 +522,14 @@ video{
 }
 
 #about-intro {
-    width: 50%;
+    width: 100%;
+    margin-top: -3rem;
+}
+
+#about-intro p{
+    max-width: 40vw;
+    font-size: 1.2vw;
     margin-left: auto;
-    margin-top: 10rem;
 }
 
 .about-vid {
@@ -543,7 +547,7 @@ video{
 
 .hidden {
     opacity: 0;
-    transition: all 1s;
+    transition: all 1.5s;
     filter: blur(5px);
     display: flex;
     flex-direction: column;
@@ -647,6 +651,7 @@ video{
 
 .contact-email h1{
     margin-inline: auto;
+    font-weight: 500;
     text-decoration: underline;
     color: #EB5E28;
 }
@@ -664,10 +669,10 @@ video{
 
 .background-circle {
     position: absolute;
-    top: 0rem;
+    top: -3rem;
     right: -5rem;
-    width: 50vw; /* Adjust the viewport width based on your design */
-    height: 50vw; /* Adjust the viewport width based on your design */
+    width: 45rem; /* Adjust the viewport width based on your design */
+    height: 45rem; /* Adjust the viewport width based on your design */
     opacity: 1;
     background-color: #EB5E28;
     border-radius: 50%;
@@ -723,4 +728,109 @@ video{
 
 .process-content a:hover {
     color: #FFFCF2;
+}
+
+@media only screen and (max-width: 1300px) {
+
+    .background-circle {
+        width: 40rem; /* Adjust the viewport width based on your design */
+        height: 40rem; /* Adjust the viewport width based on your design */
+        
+    }
+
+    #header-section {
+        padding-inline: 4rem ;
+    }
+
+}
+
+@media only screen and (max-width: 1100px) {
+
+    .background-circle {
+        width: 35rem; /* Adjust the viewport width based on your design */
+        height: 35rem; /* Adjust the viewport width based on your design */
+    }
+
+
+
+
+}
+
+@media only screen and (max-width: 1000px) {
+
+    .background-circle {
+        width: 60rem; /* Adjust the viewport width based on your design */
+        height: 60rem; /* Adjust the viewport width based on your design */
+        z-index: -1;
+        top: 50%;
+        right: 50%;
+        transform: translate(50%, -50%);
+    }
+
+    .orange-text {
+        color: #FFFCF2;
+    }
+
+    #header-section {
+        padding-inline: 3rem;
+    }
+
+    #header-section h1 {
+        font-size: 3rem;
+        font-weight: 500;
+        width: 100%;
+        margin-bottom: 0;
+    }
+
+   
+
+    #about-intro p{
+        max-width: 40vw;
+        font-size: 1rem;
+        margin-left: 0;
+        margin-right: auto;
+    }
+
+    #checkout-work {
+        margin-top: 2rem;
+        width: 2rem;
+    }
+
+    #checkout-work i:hover{
+        color: #252422;
+        transform: translateY(5px);
+    }
+
+    @media only screen and (max-width: 700px) {
+       
+        .background-circle {
+            width: 45rem; /* Adjust the viewport width based on your design */
+            height: 45rem; /* Adjust the viewport width based on your design */
+            z-index: -1;
+            top: 50%;
+            right: 50%;
+            transform: translate(50%, -50%);
+        }
+
+        #about-intro p{
+            max-width: 80vw;
+           
+        }
+
+        #navbar {
+            flex-direction: column;
+        }
+
+        #navbar ul{
+            padding-top: 1rem;
+        }
+
+
+        #navbar.hidden2 {
+            top: -120px; 
+
+        }
+
+    }
+
 }
