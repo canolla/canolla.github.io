@@ -11,7 +11,7 @@
     box-sizing: border-box;
     scroll-behavior: smooth;
     font-family: 'satoshi-medium', sans-serif;
-    cursor: none;
+    cursor: auto;
 }
 
 body {
@@ -803,6 +803,10 @@ video{
 
     @media only screen and (max-width: 700px) {
        
+        .cursor {
+            display: none;
+        }
+        
         .background-circle {
             width: 45rem; /* Adjust the viewport width based on your design */
             height: 45rem; /* Adjust the viewport width based on your design */
