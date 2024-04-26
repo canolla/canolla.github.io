@@ -20,6 +20,7 @@ body {
     color: #FFFCF2;
     padding-top: 4rem;
     overflow-x: hidden;
+    overflow-x: none;
 
 }
 
