@@ -909,6 +909,23 @@ video{
 
     @media only screen and (max-width: 700px) {
 
+        #work-display h1 {
+            display: flex;
+            align-items: center;
+            justify-content: left;
+            font-size: 3rem;
+            font-weight: 500;
+            margin-left: 2rem;
+            margin-bottom: 0rem;
+        }
+
+        #about-me h1 {
+            font-size: 3rem;
+            font-weight: 500;
+            margin-left: 0;
+            margin-right: auto;
+        }
+
         #contact {
             height: 15rem;
         }
