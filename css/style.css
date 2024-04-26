@@ -714,14 +714,15 @@ video{
 }
 
 .background-circle {
-    position: absolute;
-    top: -3rem;
+    position: fixed;
+    top: 1rem;
     right: -5rem;
     width: 45rem; /* Adjust the viewport width based on your design */
     height: 45rem; /* Adjust the viewport width based on your design */
     opacity: 1;
     background-color: #EB5E28;
     border-radius: 50%;
+    overflow: hidden; /* Ensure overflow is hidden */
 }
 
 /* TrailRanger */
