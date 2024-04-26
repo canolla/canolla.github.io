@@ -62,11 +62,16 @@ let prevScrollPos = window.pageYOffset;
 window.onscroll = function () {
     let windowScroll = document.documentElement.scrollTop;
     let windowHeight = document.documentElement.clientHeight;
+    let windowScrollHeight = document.documentElement.scrollHeight;
 
     // Check if the header section is visible
     const headerSection = document.getElementById("header-section");
     const headerRect = headerSection.getBoundingClientRect();
     const headerVisible = headerRect.bottom > 0 && headerRect.top < windowHeight;
+
+    // Update the scroll progress bar
+    let scrollAmount = (windowScroll / (windowScrollHeight - windowHeight)) * 100;
+    document.getElementById("mybar").style.width = scrollAmount + "%";
 
     // Toggle the visibility of the navbar based on the scroll direction and header visibility
     const navbar = document.getElementById("navbar");
