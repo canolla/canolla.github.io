@@ -20,7 +20,6 @@ body {
     background-color: #252422;
     color: #FFFCF2;
     padding-top: 4rem;
-    overflow-x: hidden;
 }
 
 ul, li {
@@ -96,7 +95,7 @@ ul, li {
     padding-top: 5rem;
     padding-inline: 7rem;
     position: relative;
-    overflow-x: none;
+    overflow-x: hidden;
 }
 
 #header-section h1 {
@@ -939,6 +938,7 @@ video{
             top: 50%;
             right: 50%;
             transform: translate(50%, -50%);
+            
         }
 
         #about-intro p{
