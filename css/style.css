@@ -311,6 +311,7 @@ font-size: 4vw;
 }
 
 #contact h2 {
+font-size: 2vw;
 margin-inline: auto;
 color: #EB5E28;
 }
@@ -673,7 +674,6 @@ video{
 }
 
 #contact {
-    padding-inline: 7rem;
     height: 25rem;
     justify-content: center;
 }
@@ -863,6 +863,12 @@ video{
 
     @media only screen and (max-width: 700px) {
 
+        #contact h1 {
+            font-size: 5vw;
+            }
+        #contact h2 {
+            font-size: 4vw;
+            }
 
         .about-tags span p{
             margin: 0;
