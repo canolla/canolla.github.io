@@ -15,6 +15,7 @@
 }
 
 body {
+    width: 100%;
     margin: 0;   
     background-color: #252422;
     color: #FFFCF2;
@@ -787,7 +788,6 @@ video{
     .background-circle {
         width: 40rem; /* Adjust the viewport width based on your design */
         height: 40rem; /* Adjust the viewport width based on your design */
-        
     }
 
     #header-section {
@@ -839,8 +839,8 @@ video{
     }
 
     .background-circle {
-        width: 60rem; /* Adjust the viewport width based on your design */
-        height: 60rem; /* Adjust the viewport width based on your design */
+        width: 60rem; 
+        height: 60rem; 
         z-index: -1;
         top: 50%;
         right: 50%;
