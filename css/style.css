@@ -99,6 +99,7 @@ ul, li {
     padding-inline: 7rem;
     position: relative;
     overflow-x: hidden;
+    overflow-y: visible;
 }
 
 #header-section h1 {
