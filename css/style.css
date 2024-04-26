@@ -643,15 +643,26 @@ video{
 }
 
 .about-me-desc{
+    width: 100%;
     display: flex;
     align-items: center;
     margin-inline: auto;
+    padding-inline: 5rem;
+    justify-content: center;
+}
+
+.about-me-desc video{
+    width: 20rem;
+    border-radius: 2rem;
+    margin-right: 0;
 }
 
 
 .about-me-desc p{
-    width: 30rem;
-    margin-right: 10rem;
+    font-size: 0.5rem;
+    width: 35rem;
+    text-align: left;
+    font-size: 1.2rem;
 }
 
 .about-me-layout {
@@ -765,6 +776,13 @@ video{
 
 @media only screen and (max-width: 1300px) {
 
+    .about-me-desc{
+        padding-inline: 3rem;
+    }
+    .about-me-desc p{
+        width: 30rem;
+    }
+
     .background-circle {
         width: 40rem; /* Adjust the viewport width based on your design */
         height: 40rem; /* Adjust the viewport width based on your design */
@@ -779,6 +797,19 @@ video{
 
 @media only screen and (max-width: 1100px) {
 
+    .about-me-desc{
+        padding-inline: 2rem;
+    }
+    .about-me-desc p{
+        font-size: 0.8rem;
+    }
+    
+    .about-me-desc video{
+        width: 15rem;
+        border-radius: 1.5rem; 
+        margin-right: auto;   
+    }
+
     .background-circle {
         width: 35rem; /* Adjust the viewport width based on your design */
         height: 35rem; /* Adjust the viewport width based on your design */
@@ -790,6 +821,17 @@ video{
 }
 
 @media only screen and (max-width: 1000px) {
+
+    .about-me-desc{
+
+        flex-direction: column-reverse;
+    }
+
+    .about-me-desc p{
+        font-size: 1rem;
+        margin-right: 0;
+        text-align: center;
+    }
 
     #about-me {
         padding-inline: 3rem;
@@ -922,6 +964,11 @@ video{
 
     @media only screen and (max-width: 550px) {
 
+
+        .about-me-desc p{
+           width: 20rem;
+           font-size: 0.9rem;
+        }
     
     .about-project {
         flex-direction: column;
