@@ -61,19 +61,22 @@ let prevScrollPos = window.pageYOffset;
 
 window.onscroll = function () {
     let windowScroll = document.documentElement.scrollTop;
-    let windowHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
-    let scrollAmount = (windowScroll / windowHeight) * 100;
+    let windowHeight = document.documentElement.clientHeight;
 
-    // Update the width of the progress bar
-    document.getElementById("mybar").style.width = scrollAmount + "%";
+    // Check if the header section is visible
+    const headerSection = document.getElementById("header-section");
+    const headerRect = headerSection.getBoundingClientRect();
+    const headerVisible = headerRect.bottom > 0 && headerRect.top < windowHeight;
 
-    // Toggle the visibility of the navbar based on the scroll direction
+    // Toggle the visibility of the navbar based on the scroll direction and header visibility
     const navbar = document.getElementById("navbar");
     const hideThreshold = 200; // Adjust this value based on your requirements
 
     if (windowScroll > prevScrollPos) {
-        // Scrolling down, hide the navbar
-        navbar.classList.add("hidden2");
+        // Scrolling down
+        if (!headerVisible) {
+            navbar.classList.add("hidden2");
+        }
     } else {
         // Scrolling up, show the navbar
         navbar.classList.remove("hidden2");
@@ -82,6 +85,7 @@ window.onscroll = function () {
     // Update the previous scroll position
     prevScrollPos = windowScroll;
 };
+
 
 
 //reveal
