@@ -21,8 +21,6 @@ body {
     color: #FFFCF2;
     padding-top: 4rem;
     overflow-x: hidden;
-    overflow-x: none;
-
 }
 
 ul, li {
@@ -98,8 +96,7 @@ ul, li {
     padding-top: 5rem;
     padding-inline: 7rem;
     position: relative;
-    overflow-x: hidden;
-    overflow-y: visible;
+    overflow-x: none;
 }
 
 #header-section h1 {
@@ -724,8 +721,6 @@ video{
     opacity: 1;
     background-color: #EB5E28;
     border-radius: 50%;
-    overflow-x: none; /* Ensure overflow is hidden */
-
 }
 
 /* TrailRanger */
