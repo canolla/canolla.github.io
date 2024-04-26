@@ -198,6 +198,31 @@ ul, li {
     margin: 0;
     font-size: 1.1rem;
 }
+.hobby-tags {
+    width: 100%;
+    margin-left: auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.hobby-tags span{
+    color: #FFFCF2;
+    border-radius: 20px;
+    border-color: #EB5E28;
+    display: inline-block;
+    padding-inline: 0.7rem;
+    padding-block: 0.5rem;
+    margin-block: 1rem;
+    margin-inline: 0.5rem;
+}
+
+.hobby-tags span p{
+    margin: 0;
+    font-size: 1.1rem;
+    white-space: nowrap;
+}
 
 .about-project {
     width: 100%;
@@ -575,7 +600,7 @@ video{
 }
 
 #about-me {
-    padding-inline: 7rem;
+    padding-inline: 5rem;
 }
 
 .hobbies h2{
@@ -593,11 +618,13 @@ video{
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-wrap: wrap; /* Allow items to wrap to the next line */
 }
 
 .hobbies-lists ul{
     display: flex;
     padding-inline: auto;
+    list-style-type: none; /* Remove default list styles */
 }
 
 .hobbies-lists li{
@@ -764,6 +791,10 @@ video{
 
 @media only screen and (max-width: 1000px) {
 
+    #about-me {
+        padding-inline: 3rem;
+    }
+
     .background-circle {
         width: 60rem; /* Adjust the viewport width based on your design */
         height: 60rem; /* Adjust the viewport width based on your design */
@@ -832,7 +863,12 @@ video{
 
     @media only screen and (max-width: 700px) {
 
+
         .about-tags span p{
+            margin: 0;
+            font-size: 0.8rem;
+        }
+        .hobby-tags span p{
             margin: 0;
             font-size: 0.8rem;
         }
