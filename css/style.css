@@ -98,7 +98,7 @@ ul, li {
     padding-top: 5rem;
     padding-inline: 7rem;
     position: relative;
-    width: 100%;
+    overflow-x: hidden;
 }
 
 #header-section h1 {
@@ -937,9 +937,8 @@ video{
         }
         
         .background-circle {
-            position: relative;
-            width: 35rem; /* Adjust the viewport width based on your design */
-            height: 35rem; /* Adjust the viewport width based on your design */
+            width: 45rem; /* Adjust the viewport width based on your design */
+            height: 45rem; /* Adjust the viewport width based on your design */
             z-index: -1;
             top: 50%;
             right: 50%;
