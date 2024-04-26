@@ -108,7 +108,6 @@ ul, li {
 
 #about-intro p {
     font-family: satoshi-medium;
-    font-size: 1.3vw;
 }
 
 
@@ -560,7 +559,7 @@ video{
 
 #about-intro p{
     max-width: 40vw;
-    font-size: 1.2vw;
+    font-size: 1.4vw;
     margin-left: auto;
 }
 
@@ -777,6 +776,10 @@ video{
 
 @media only screen and (max-width: 1300px) {
 
+    #about-intro p {
+        font-size: 1.5vw;
+    }
+
     .about-me-desc{
         padding-inline: 3rem;
     }
@@ -813,6 +816,10 @@ video{
     .background-circle {
         width: 35rem; /* Adjust the viewport width based on your design */
         height: 35rem; /* Adjust the viewport width based on your design */
+    }
+
+    #about-intro p {
+        font-size: 1.4vw;
     }
 
 
@@ -861,8 +868,8 @@ video{
    
 
     #about-intro p{
-        max-width: 40vw;
-        font-size: 1rem;
+        max-width: 50vw;
+        font-size: 1.2rem;
         margin-left: auto;
         margin-right: 0;
     }
