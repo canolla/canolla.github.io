@@ -909,6 +909,10 @@ video{
 
     @media only screen and (max-width: 700px) {
 
+        #contact {
+            height: 20rem;
+        }
+
         #contact h1 {
             font-size: 5vw;
             }
@@ -968,7 +972,6 @@ video{
     }
 
     @media only screen and (max-width: 550px) {
-
 
         .about-me-desc p{
            width: 20rem;
