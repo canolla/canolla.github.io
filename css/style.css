@@ -844,7 +844,7 @@ video{
         height: 60rem; 
         z-index: -1;
         top: 50%;
-        right: 50%;
+        right: 0rem;
         transform: translate(50%, -50%);
     }
 
@@ -939,7 +939,7 @@ video{
             height: 45rem; /* Adjust the viewport width based on your design */
             z-index: -1;
             top: 50%;
-            right: 50%;
+            right: 0rem;
             transform: translate(50%, -50%);
         }
 
