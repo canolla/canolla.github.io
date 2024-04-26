@@ -203,7 +203,7 @@ ul, li {
     padding:0;
 }
 .b-section-marquee-box {
-    height: 180px;
+    height: 160px;
     display: flex;
     align-items: center;
     overflow: hidden;
@@ -326,6 +326,7 @@ font-size: 2.5rem;
 
 #about-me h1 {
     margin-left: auto;
+    margin-right: 4rem;
     font-size: 4rem;
     font-weight: 500;
     margin-bottom: 0;
@@ -604,7 +605,7 @@ video{
 }
 
 #about-me {
-    padding-inline: 3rem;
+    padding-inline: 0rem;
 }
 
 .hidden {
@@ -631,7 +632,7 @@ video{
 }
 
 #about-me {
-    padding-inline: 5rem;
+    padding-inline: 0rem;
 }
 
 .hobbies h2{
@@ -677,7 +678,7 @@ video{
     display: flex;
     align-items: center;
     margin-inline: auto;
-    padding-inline: 5rem;
+    padding-inline: 9rem;
     justify-content: center;
 }
 
@@ -836,6 +837,8 @@ video{
     }
     .about-me-desc p{
         font-size: 0.8rem;
+        margin-left: auto; 
+        width: 20rem;
     }
     
     .about-me-desc video{
@@ -869,10 +872,11 @@ video{
         font-size: 1rem;
         margin-right: 0;
         text-align: center;
+        margin-left: 0;
     }
 
     #about-me {
-        padding-inline: 2rem;
+        padding-inline: 0rem;
     }
 
     .background-circle {
@@ -957,6 +961,7 @@ video{
             font-weight: 500;
             margin-left: 0;
             margin-right: auto;
+            margin-left: 2rem;
         }
 
         #contact {
