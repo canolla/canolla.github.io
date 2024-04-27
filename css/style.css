@@ -1040,9 +1040,7 @@ video{
     @media only screen and (max-width: 550px) {
 
 
-        .b-section-marquee-box h2 {
-            font-size: 1.5em;
-        }
+
 
         .about-me-desc p{
            width: 20rem;
