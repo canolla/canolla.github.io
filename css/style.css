@@ -1032,11 +1032,12 @@ video{
         }
 
         #navbar {
-            flex-direction: column;
+            flex-direction: row;
+            padding-inline: 2rem;
         }
 
         #navbar ul{
-            padding-top: 1rem;
+            width: 14rem;
         }
 
 
