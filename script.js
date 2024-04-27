@@ -55,41 +55,35 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 
-//scroll indicator & navbar
-
 let prevScrollPos = window.pageYOffset;
 
 window.onscroll = function () {
-    let windowScroll = document.documentElement.scrollTop;
-    let windowHeight = document.documentElement.clientHeight;
-    let windowScrollHeight = document.documentElement.scrollHeight;
+  let windowScroll = document.documentElement.scrollTop;
+  let windowHeight = document.documentElement.clientHeight;
+  let windowScrollHeight = document.documentElement.scrollHeight;
 
-    // Check if the header section is visible
-    const headerSection = document.getElementById("header-section");
-    const headerRect = headerSection.getBoundingClientRect();
-    const headerVisible = headerRect.bottom > 0 && headerRect.top < windowHeight;
+  // Update the scroll progress bar
+  let scrollAmount = (windowScroll / (windowScrollHeight - windowHeight)) * 100;
+  document.getElementById("mybar").style.width = scrollAmount + "%";
 
-    // Update the scroll progress bar
-    let scrollAmount = (windowScroll / (windowScrollHeight - windowHeight)) * 100;
-    document.getElementById("mybar").style.width = scrollAmount + "%";
+  // Toggle the visibility of the navbar based on scroll direction
+  const navbar = document.getElementById("navbar");
+  const hideThreshold = 200; // Adjust this value based on your requirements
 
-    // Toggle the visibility of the navbar based on the scroll direction and header visibility
-    const navbar = document.getElementById("navbar");
-    const hideThreshold = 200; // Adjust this value based on your requirements
-
-    if (windowScroll > prevScrollPos) {
-        // Scrolling down
-        if (!headerVisible) {
-            navbar.classList.add("hidden2");
-        }
-    } else {
-        // Scrolling up, show the navbar
-        navbar.classList.remove("hidden2");
+  if (windowScroll > prevScrollPos) {
+    // Scrolling down, hide the navbar after the threshold is passed
+    if (windowScroll > hideThreshold) {
+      navbar.classList.add("hidden2");
     }
+  } else {
+    // Scrolling up, show the navbar
+    navbar.classList.remove("hidden2");
+  }
 
-    // Update the previous scroll position
-    prevScrollPos = windowScroll;
+  // Update the previous scroll position
+  prevScrollPos = windowScroll;
 };
+
 
 
 
