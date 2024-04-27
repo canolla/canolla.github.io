@@ -341,6 +341,7 @@ font-size: 2.5rem;
 
 #contact {
     display: flex;
+    align-items: flex-start;
     flex-direction: column;
 }
 
@@ -364,7 +365,7 @@ footer {
     width: 100%;
     background-color: #252422;
     color: #EB5E28;
-    border: solid #EB5E28 1px;
+    border-top: solid #EB5E28 1px;
 }
 
 
