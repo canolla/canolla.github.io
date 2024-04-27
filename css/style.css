@@ -202,13 +202,14 @@ ul, li {
 .b-section {
     padding:0;
 }
+
 .b-section-marquee-box {
     height: 160px;
     display: flex;
     align-items: center;
-    overflow: hidden;
-    
+    overflow: hidden;   
 }
+
 .b-section-marquee-box h2 {
     white-space: nowrap;
     text-transform: uppercase;
@@ -863,17 +864,7 @@ video{
 
 @media only screen and (max-width: 1000px) {
 
-    .about-me-desc{
 
-        flex-direction: column-reverse;
-    }
-
-    .about-me-desc p{
-        font-size: 1rem;
-        margin-right: 0;
-        text-align: center;
-        margin-left: 0;
-    }
 
     #about-me {
         padding-inline: 0rem;
@@ -945,6 +936,26 @@ video{
 
 
     @media only screen and (max-width: 700px) {
+
+        .b-section-marquee-box {
+            height: 130px;  
+        }
+
+        .about-me-desc video {
+            margin-block: 1rem;
+        }
+
+        .about-me-desc{
+
+            flex-direction: column-reverse;
+        }
+    
+        .about-me-desc p{
+            font-size: 1rem;
+            margin-right: 0;
+            text-align: center;
+            margin-left: 0;
+        }
 
         #work-display h1 {
             display: flex;
