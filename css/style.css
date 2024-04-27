@@ -886,6 +886,7 @@ video{
     }
 
     #header-section {
+        padding-top: 2rem;
         padding-inline: 2rem;
         background-color: #EB5E28;
     }
