@@ -1091,3 +1091,24 @@ margin-top: 3rem;
 }
 
    
+
+/* Larger Screens */
+
+    @media screen and (min-width: 1700px) {
+
+        .background-circle {
+            height: 45rem;
+            width: 45rem;
+        }
+    
+    }
+        
+    @media screen and (min-width: 1900px) {
+
+        .background-circle {
+            height: 55rem;
+            width: 55rem;
+        }
+        
+
+}
