@@ -1094,6 +1094,15 @@ margin-top: 3rem;
 
 /* Larger Screens */
 
+    @media screen and (min-width: 1600px) {
+
+        .background-circle {
+            height: 40rem;
+            width: 40rem;
+        }
+    
+    }
+
     @media screen and (min-width: 1700px) {
 
         .background-circle {
@@ -1103,6 +1112,15 @@ margin-top: 3rem;
     
     }
         
+    @media screen and (min-width: 1800px) {
+
+        .background-circle {
+            height: 50rem;
+            width: 50rem;
+        }
+        
+
+}
     @media screen and (min-width: 1900px) {
 
         .background-circle {
