@@ -1109,6 +1109,10 @@ margin-top: 3rem;
             height: 55rem;
             width: 55rem;
         }
+
+        .about-me-desc{
+            padding-inline: 16rem;
+        }
         
 
 }
