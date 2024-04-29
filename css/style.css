@@ -1113,6 +1113,10 @@ margin-top: 3rem;
         .about-me-desc{
             padding-inline: 16rem;
         }
+
+        .about-project p{
+            font-size: 1.8rem;
+        }
         
 
 }
