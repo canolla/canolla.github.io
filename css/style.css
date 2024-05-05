@@ -272,6 +272,10 @@ ul, li {
     text-align: left;
 }
 
+.about-content {
+    display: flex;
+}
+
 .about-project h2{
 display: inline-block;
 white-space: nowrap;
@@ -280,10 +284,19 @@ padding-block: 0;
 font-size: 2.5rem;
 }
 .about-project p{
-    font-size: 1.3rem;
-    padding-inline: 5rem;
-    margin-block: 0;
+    font-size: 1.5rem;
+    padding-inline: 0;
+    margin-left: 3rem;
     padding-block: 0;
+    margin-top: 0;
+}
+
+.about-project2 p{
+    font-size: 1.5rem;
+    padding-inline: 0;
+    margin-left: 3rem;
+    padding-block: 0;
+    margin-top: 0;
 }
 
 /* project 2 */
@@ -380,7 +393,7 @@ display: flex;
 flex-direction: column;
 align-items: center;
 justify-content: center;
-width: 60%;
+width: 75%;
 margin-inline: auto;
 
 }
@@ -401,9 +414,10 @@ video{
 }
 
 .project-title h1 {
-    font-size: 5rem;
+    font-size: 7rem;
     font-weight: 400;
     margin: 0;
+    text-wrap: wrap;
 }
 
 .project-title {
@@ -413,10 +427,21 @@ video{
 
 .heading-info {
     display: flex;
+    flex-direction: column;
+
+    
 }
 
 .para-1 {
-    padding-inline: 7rem;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    margin-left: auto;
+}
+
+.para-1 p{
+    width: 100%;
+    margin-inline: 2rem;
 }
 
 .overview {
@@ -793,6 +818,7 @@ video{
 
   .pdf h2 {
     margin: 0;
+    margin-top: 3rem;
   }
 
   .walkthrough-vid {
@@ -841,6 +867,18 @@ video{
         padding-inline: 4rem;
     }
 
+    .heading-info {
+        flex-direction: column;
+    }
+
+    .para-1 {
+        padding-inline: 0;
+        }
+
+    .project-title h1 {
+        font-size: 4rem;
+    }
+
 }
 
 @media only screen and (max-width: 1100px) {
@@ -868,8 +906,6 @@ video{
     #about-intro p {
         font-size: 1.4vw;
     }
-
-
 
 
 }
@@ -925,7 +961,9 @@ video{
 
     .about-project p {
         font-size: 1.1rem;
-        padding-inline: 2rem;
+    }
+    .about-project2 p {
+        font-size: 1.1rem;
     }
 
     #project {
@@ -943,6 +981,36 @@ video{
         width: 90%;
         margin-right: auto;
         margin-left: auto;
+    }
+    
+    .para-1 {
+        font-size: 0.8rem;
+        flex-direction: column;
+    }
+
+    .para-1 p{
+    margin-inline: 0;
+    margin-block: 1rem;
+    }
+
+    .content-section {
+        margin-top: 0px; 
+    }
+
+    .images {
+        width: 95%;
+    }
+
+    .pdf img { 
+        max-width: 95%;
+    }
+
+    .project-title {
+        margin-left: 1rem;
+    }
+
+    .about-project2 p {
+        margin-left: 1rem;
     }
 
 }
@@ -1064,6 +1132,16 @@ margin-top: 3rem;
             margin-top: 3rem;
         }
 
+        .project-title h1 {
+            font-size: 3rem;
+        }
+        .project-title {
+            margin-left: 1rem;
+        }
+        .about-project2 p {
+            margin-left: 1rem;
+        }
+
     }
 
     @media only screen and (max-width: 550px) {
@@ -1082,11 +1160,26 @@ margin-top: 3rem;
         font-size: 3rem;
     }
 
-    .about-project p {
+    .about-project2 p {
         padding-inline: 0rem;
         font-size: 1.1rem;
         width: 80%;
     }
+
+
+    .project-title h1 {
+        font-size: 2.5rem;
+    }
+
+    .about-tags span p{
+        margin: 0;
+        font-size: 0.7rem;
+    }
+
+    .about-project p{
+        margin-left: 0rem;
+    }
+
 
 }
 
@@ -1115,6 +1208,10 @@ margin-top: 3rem;
         }
 
         .about-project p{
+            font-size: 1.8rem;
+        }
+
+        .about-project2 p{
             font-size: 1.8rem;
         }
         
