@@ -11,7 +11,6 @@
     box-sizing: border-box;
     scroll-behavior: smooth;
     font-family: 'satoshi-medium', sans-serif;
-    cursor: auto;
 }
 
 body {
@@ -385,6 +384,10 @@ footer {
     border-top: solid #EB5E28 1px;
 }
 
+.visuals img {
+   margin-block: 0rem !important ;
+}
+
 
 /* Nourish Network */
 
@@ -432,6 +435,11 @@ video{
     
 }
 
+.visual-para {
+margin-left: auto;
+width: 50%;
+}
+
 .para-1 {
     display: flex;
     justify-content: space-between;
@@ -453,6 +461,25 @@ video{
     justify-content: space-between;
     flex-direction: row;
     width: 100%;
+}
+
+.para-3 p{
+    width: 100%;
+}
+.para-3 {
+    display: flex;
+    width: 100%;
+    margin-right: 1rem;
+}
+.para-4 {
+    display: flex;
+    width: 100%;
+    margin-left: 1rem;
+}
+
+.nextdoor {
+    display: flex;
+    margin-bottom: 3rem;
 }
 
 .para-1 p{
@@ -571,22 +598,31 @@ video{
         width: 100%;
         align-items: left;
         font-size: 2rem;
+        height: 7rem;
     }
 
 .the-brief {
-    width: 75%;
+    width: 50%;
     border-radius: 1rem;
-    margin-block: 3rem;
-    text-align: left;
-    font-size: 1rem;
-    background-color: #EB5E28;
-    padding: 1rem;
+    text-align: center;
+    margin-inline: auto;
 }
+
+.research-q-section {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
 .process-content {
     width: 75%;
     border-radius: 3rem;
     color: #FFFCF2;
     margin-block: 3rem;
+}
+
+.visual-research {
+    display: flex;
 }
 
 .process-content img{
@@ -623,19 +659,8 @@ video{
     color: #FFFCF2;
 }
 
-
-.problem-solution {
-    display: flex;
-    max-width: 60%;
-    gap: 3rem;
-}
-
-#problem {
-    color: #EB5E28;
-}
-
-#solution {
-    color: aquamarine;
+#question {
+    margin-left: 3rem;
 }
 
 .stylescape {
@@ -828,12 +853,15 @@ video{
     margin: 0;
   }
 
+  .pdf p {
+    width: 100%;
+  }
+
   .pdf :hover {
     color: #FFFCF2;
   }
 
   .pdf img {
-    max-width: 80%;
     margin-top: 0;
   }
 
@@ -1012,6 +1040,49 @@ video{
     .para-1 p{
     margin-inline: 0;
     margin-block: 1rem;
+    }
+
+    .para-2 {
+        font-size: 0.8rem;
+        flex-direction: column;
+    }
+
+    .para-2 p{
+    margin-inline: 0;
+    margin-block: 1rem;
+    width: 100%;
+    }
+
+    .para-3 {
+        font-size: 0.8rem;
+        flex-direction: column;
+    }
+
+    .para-3 p{
+    margin-inline: 0;
+    margin-block: 1rem;
+    }
+
+    .para-4 {
+        font-size: 0.8rem;
+        flex-direction: column;
+    }
+
+    .para-4 p{
+    margin-inline: 0;
+    margin-block: 1rem;
+    }
+
+    .visual-para {
+        font-size: 0.8rem;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .visual-para p{
+        margin-inline: 0;
+        margin-block: 1rem;
+        width: 100%;
     }
 
     .content-section {
