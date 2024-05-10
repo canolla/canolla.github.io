@@ -78,10 +78,13 @@ ul, li {
 #navbar a {
     color: #FFFCF2;
     text-decoration: none;
+    transition: 0.3s;
 }
 
 #navbar a:hover {
     color: #EB5E28;
+    transition: 0.3s;
+
 }
 
 .lewjc-logo {
@@ -361,11 +364,13 @@ font-size: 2.5rem;
     flex-direction: column;
 }
 #contact h1:hover {
-    color: #FFFCF2;
+    color: #ff4800;
+    transition: 0.3s;
 }
 
 #contact h1 {
 font-size: 4vw;
+transition: 0.3s;
 }
 
 #contact h2 {
@@ -649,6 +654,7 @@ width: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
+    transition: 0.3s;
 }
 
 .next-project a { 
@@ -656,10 +662,11 @@ width: 50%;
     color: #EB5E28;
     font-size: 3rem;
     font-weight: 600;
+    transition: 0.3s;
 }
 
 .next-project a:hover { 
-    color: #FFFCF2;
+    color: #ff4800;
 }
 
 #question {
