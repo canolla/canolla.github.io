@@ -861,6 +861,7 @@ width: 50%;
     text-decoration: underline;
     color: #EB5E28;
     margin: 0;
+    transition: 0.3s;
   }
 
   .pdf p {
@@ -868,7 +869,8 @@ width: 50%;
   }
 
   .pdf :hover {
-    color: #FFFCF2;
+    color: #ff4800;
+    transition: 0.3s;
   }
 
   .pdf img {
