@@ -95,7 +95,7 @@ ul, li {
 
 #header-section {
     padding-top: 5rem;
-    padding-inline: 7rem;
+    padding-inline: 4rem;
     position: relative;
     overflow-x: hidden;
 }
@@ -145,7 +145,7 @@ ul, li {
     justify-content: left;
     font-size: 4rem;
     font-weight: 500;
-    margin-left: 3rem;
+    margin-left: 4rem;
 }
 
 #work-display h2 {
@@ -160,35 +160,34 @@ ul, li {
     align-items: baseline;
     justify-content: baseline;
     width: 60%;
-    margin-left: 3rem;
+    margin-left: 4rem;
     margin-block: 3rem;
 }
 
 #project img:hover {
     transform: scale(0.99);
-     opacity: 1; 
+     opacity: 0.8;
 }
 
 #project img {
-    width: 100%;
-    border-radius: 20px;
+    width: 100%;    
     transition: 0.3s ease-in-out;
     top: 0;
     left: 0;
 }
 
 .about-tags {
-    width: 100%;
+    margin-left: auto;
 }
 
 .about-tags span{
     color: #FFFCF2;
-    background-color: #EB5E28;
-    border-radius: 20px;
+    border-radius: 10px;
     display: inline-block;
     padding-inline: 0.7rem;
     padding-block: 0.5rem;
     margin-block: 1rem;
+    border: solid 1px #EB5E28
 }
 
 .about-tags span p{
@@ -202,13 +201,14 @@ ul, li {
 
 .b-section-marquee-box {
     position: absolute;
-    height: 160px;
+    height: 100px;
     display: flex;
     align-items: center;
     overflow: hidden;   
     z-index: -1;
-    margin-top: 70px;
     width: 100%;
+    border-block: solid 1px #fffcf2;
+    margin-top: 40px;
 }
 
 .b-section-marquee-box h2 {
@@ -218,7 +218,8 @@ ul, li {
     font-size: 2em;
     font-weight: 100;
     flex-shrink: 0;
-    padding: 0 10px;
+    padding-block: 0;
+    padding-inline: 5px 5px;
     width: max-content;
     display: flex;
     align-items: center;
@@ -263,7 +264,7 @@ ul, li {
 .about-project {
     width: 100%;
     display: flex;
-    align-items: top;
+    align-items: center;
     justify-content: space-between;
     text-align: left;
 }
@@ -304,18 +305,35 @@ font-size: 2.5rem;
     justify-content: flex-end;
     width: 60%;
     margin-left: auto;
-    margin-right: 3rem;
+    margin-right: 4rem;
     margin-block: 3rem;
 }
 
 #project2 img {
     width: 100%;
-    border-radius: 20px;
-    transition: transform 0.3s ease-out;
+    transition: 0.3s ease-in-out;
 }
 
 #project2 img:hover {
     transform: scale(0.99);
+    opacity: 0.8;
+}
+
+.scroll-container {
+    position: absolute;
+}
+
+.svg-container {
+    position: fixed;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    pointer-events: none; /* Ensure it doesn't interfere with user interactions */
+}
+
+#animatedSvg {
+    width: 150px;
+    height: 150px;
 }
 
 #project3 {
@@ -324,18 +342,18 @@ font-size: 2.5rem;
     align-items: baseline;
     justify-content: baseline;
     width: 60%;
-    margin-left: 3rem;
+    margin-left: 4rem;
     margin-block: 3rem;
 }
 
 #project3 img {
     width: 100%;
-    border-radius: 20px;
-    transition: transform 0.3s ease-out;
+    transition:  0.3s ease-in-out;
 }
 
 #project3 img:hover {
     transform: scale(0.99);
+    opacity: 0.8;
 }
 
 #about-me {
@@ -349,7 +367,7 @@ font-size: 2.5rem;
     margin-right: auto;
     font-size: 4rem;
     font-weight: 500;
-    margin-bottom: 0;
+    margin-bottom: 53px;
 }
 
 #contact {
@@ -683,8 +701,7 @@ width: 50%;
 }
 
 .about-vid {
-    width: 20rem;
-    border-radius: 2rem;
+    width: 30rem;
 }
 
 .orange-text {
@@ -765,8 +782,8 @@ width: 50%;
     display: flex;
     align-items: center;
     margin-inline: auto;
-    padding-inline: 9rem;
-    justify-content: center;
+    padding-inline: 4rem;
+    justify-content: space-between;
 }
 
 .about-me-desc video{
@@ -778,7 +795,7 @@ width: 50%;
 
 .about-me-desc p{
     font-size: 0.5rem;
-    width: 35rem;
+    width: 40rem;
     text-align: left;
     font-size: 1.2rem;
     margin-top: 100px;
@@ -919,7 +936,7 @@ width: 50%;
     }
 
     #header-section {
-        padding-inline: 4rem;
+        padding-inline: 3rem;
     }
 
     .heading-info {
@@ -1121,8 +1138,8 @@ width: 50%;
         }
 
         .b-section-marquee-box {
-            height: 130px;  
-            margin-top: 80px;
+            height: 100px;  
+    
         }
 
         .b-section-marquee-box h2 {

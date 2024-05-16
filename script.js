@@ -107,3 +107,48 @@ const cursor = document.querySelector('.cursor');
 document.addEventListener('mousemove', e => {
     cursor.setAttribute("style", "top: "+(e.pageY - 10)+"px; left: "+(e.pageX - 10)+"px;")
 })
+// script.js
+document.addEventListener('scroll', () => {
+    const svg = document.getElementById('animatedSvg');
+    const scrollY = window.scrollY;
+
+    const startScroll = 500; 
+    const endScroll = 2000;  
+    const totalScroll = endScroll - startScroll;
+
+    const maxTranslationX = window.innerWidth + 200; // Move further beyond left edge
+    const maxTranslationY = window.innerHeight / 2; // Adjust to center vertically or move slightly
+
+    if (scrollY >= startScroll && scrollY <= endScroll) {
+        const progress = (scrollY - startScroll) / totalScroll;
+
+        const translationX = maxTranslationX * (1 - progress) - 200; // Ensure it starts off-screen right and ends off-screen left
+        const translationY = maxTranslationY * progress - 50; // Center or move vertically slightly
+        const rotation = 360 * progress; // 360 degrees rotation during the scroll range
+
+        svg.style.transform = `translate(${translationX}px, ${translationY}px) rotate(${rotation}deg)`;
+    } else if (scrollY < startScroll) {
+        // Before the animation scroll range
+        svg.style.transform = `translate(${window.innerWidth}px, 0px) rotate(0deg)`;
+    } else if (scrollY > endScroll) {
+        // After the animation scroll range
+        svg.style.transform = `translate(-200px, ${maxTranslationY - 50}px) rotate(360deg)`;
+    }
+});
+
+// Ensure the SVG starts off-screen on the right if the page is loaded or refreshed before the startScroll
+window.addEventListener('load', () => {
+    const svg = document.getElementById('animatedSvg');
+    const scrollY = window.scrollY;
+    const startScroll = 500;
+    const endScroll = 2000;
+
+    if (scrollY < startScroll) {
+        svg.style.transform = `translate(${window.innerWidth}px, 0px) rotate(0deg)`;
+    } else if (scrollY > endScroll) {
+        const maxTranslationY = window.innerHeight / 2;
+        svg.style.transform = `translate(-200px, ${maxTranslationY - 50}px) rotate(360deg)`;
+    }
+});
+
+
