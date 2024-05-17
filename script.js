@@ -166,3 +166,11 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 
 
+document.addEventListener('scroll', function() {
+    const scrollPosition = window.scrollY;
+    const backgroundCircle = document.querySelector('.background-circle');
+
+    // Adjust the multiplier (0.5) to control the speed of the upward movement
+    const newPosition = -3 - (scrollPosition * 0.02);
+    backgroundCircle.style.top = `${newPosition}rem`;
+});
