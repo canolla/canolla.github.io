@@ -151,4 +151,18 @@ window.addEventListener('load', () => {
     }
 });
 
+document.addEventListener("DOMContentLoaded", function() {
+    const contactEmail = document.querySelector('.contact-email');
+
+    function checkVisibility() {
+        const rect = contactEmail.getBoundingClientRect();
+        if (rect.top < window.innerHeight && rect.bottom > 0) {
+            contactEmail.classList.add('visible');
+        }
+    }
+
+    window.addEventListener('scroll', checkVisibility);
+    checkVisibility(); // Initial check in case the element is already in view
+});
+
 
