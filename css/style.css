@@ -145,7 +145,7 @@ ul, li {
     justify-content: left;
     font-size: 4rem;
     font-weight: 500;
-    margin-left: 2rem;
+    margin-left: 4rem;
 }
 
 #work-display h2 {
@@ -418,70 +418,60 @@ font-size: 2.5rem;
     margin-right: auto;
     font-size: 4rem;
     font-weight: 500;
-    margin-bottom: 0px;
-}
-
-#contact {
-    display: flex;
-    align-items: flex-start;
-    flex-direction: column;
-    position: relative;
-    overflow: hidden;
-}
-
-#contact h2:hover {
-    color: #EB5E28;
-    transition: 0.3s ease-in-out;
-}
-
-.link-1 {
-    display: flex;
-    align-items: center;
-    flex-direction: row;
-    margin-inline: 4rem;
-}
-
-.link-2 {
-    display: flex;
-    align-items: center;
-
-    flex-direction: row;
-    margin-inline: 4rem;
-}
-
-#contact h1 {
-    font-size: 3rem;
-    font-weight: 600;
-}
-
-.contact-links {
-    display: flex;
-}
-
-.contact-links a {
-    padding-left: 1rem;
-}
-
-
-#contact h2 {
-font-size: 2vw;
-margin-inline: auto;
-color: #FFFCF2;
-font-weight: 500;
-transition: color 0.3s ease-in-out;
+    margin-bottom: 30px;
 }
 
 /* footer */
 
 footer {
     display: flex;
-    justify-content: space-around;
-    align-items: center;
-    height: 4rem;
+    flex-direction: column;
+    align-items: left;
+    justify-content: space-between;
     width: 100%;
     background-color: #252422;
-    color: #EB5E28;
+    color: #F1F1E1;
     border-top: solid #EB5E28 1px;
+    padding-inline: 4rem;
+}
+
+.contact-details {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.contact-links {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+
+
+.contact-details h1 {
+    font-size: 2.5rem;
+    margin-right: 1rem;
+}
+
+.contact-details h2 {
+    font-size: 2rem;
+    margin-right: 1rem;
+    color: #F1F1E1;
+    transition: 0.3s ease-in-out;
+    text-decoration: underline;
+}
+.contact-details a {
+        text-decoration: none;
+}
+
+.contact-details h2:hover {
+    color: #EB5E28;
+}
+
+.copyright {
+    display: flex;
+    align-items: end;
 }
 
 .visuals img {
@@ -889,6 +879,7 @@ width: 50%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    margin-bottom: 10rem;
 }
 
 .cursor {
@@ -902,14 +893,6 @@ width: 50%;
     transition-timing-function: ease-out;
     pointer-events: none;
     z-index: 99999;
-}
-
-#contact {
-    height: 25rem;
-    justify-content: center;
-    padding-inline: 4rem;
-    position: relative;
-    overflow: hidden;
 }
 
 .contact-email {
@@ -1073,17 +1056,9 @@ width: 50%;
 @media only screen and (max-width: 1300px) {
 
 
-    #contact {
-        padding-inline: 2rem;
-        height: 20rem;
-    }
-
-    .contact-links {
-        flex-direction: column;
-    }
-
     #about-me h1 {
         margin-left: 4rem;
+        margin-bottom: 0px;
     }
 
     #about-intro p {
@@ -1158,6 +1133,18 @@ width: 50%;
 
 @media only screen and (max-width: 1100px) {
 
+
+    .contact-details { 
+        flex-direction: column;
+        align-items: baseline;
+    }
+
+    .contact-links {
+        display: flex;
+     flex-direction: column;
+     align-items: baseline;
+    }
+
     .about-me-desc p{
         font-size: 1rem;
         margin-left: 2rem; 
@@ -1180,10 +1167,20 @@ width: 50%;
         font-size: 1.4vw;
     }
 
+    .copyright {
+        margin-top: 3rem;
+    }
+
 
 }
 
 @media only screen and (max-width: 1000px) {
+
+    #work-display h1 {
+
+        margin-left: 3rem;
+    }
+
 
     .left-text p {
         margin-top: 0.5rem;
@@ -1203,9 +1200,6 @@ width: 50%;
         height: 80%;
     }
 
-    #contact h1 {
-        font-size: 4vw;
-        }
 
     #about-me h1 {
         margin-left:3rem;
@@ -1394,9 +1388,28 @@ width: 50%;
 
     @media only screen and (max-width: 700px) {
 
+        .about-me-layout { 
+            margin-bottom: 5rem;
+        }
 
 
-   
+        .contact-details h2 {
+            font-size: 1.5rem;
+        }
+
+        footer {
+            flex-direction: column;
+        }
+
+        .link-1 {
+            margin-inline: 2rem;
+        }
+        .link-2 {
+            margin-inline: 2rem;
+        }
+        .contact-email {
+            padding-inline: 2rem;
+        }
 
         .about-pic {
             margin-top: 8rem;
@@ -1410,7 +1423,7 @@ width: 50%;
 
         .b-section-marquee-box {
             height: 100px; 
-            margin-top: 50px; 
+            margin-top: 30px; 
     
         }
 
@@ -1459,10 +1472,6 @@ width: 50%;
             margin-right: auto;
             margin-left: 2rem;
             margin-bottom: 0px;
-        }
-
-        #contact {
-            height: 20rem;
         }
 
         .about-tags span p{
@@ -1539,51 +1548,12 @@ width: 50%;
 
     @media only screen and (max-width: 550px) {
 
-
-        #contact h1 {
-            font-size: 7vw;
-            }
-
-        .contact-email {
-            flex-direction: column;
-        }
-        
-        .contact-links .bullet-point{
-            display: none;
-        }
-
-        .contact-links {
-            align-items: flex-start;
-        }
-
-        #contact h2{
-            font-size: 1.1rem;
-        }
-
-        .contact-links a{
-            padding-left: 0;
-        }
-
-        .contact-email{
-            align-items: flex-start;
-            padding-inline: 2rem;
-            border: none;
-        }
-
-        .link-1 {
-            margin-inline: 0;
-        }
-        .link-2 {
-            margin-inline: 0;
-        }
-
-        #contact h1 {
-            font-size: 6vw;
-            }
-
         .about-me-desc p{
-           width: 20rem;
-           font-size: 0.9rem;
+            width: 20rem;
+        }
+
+        #work-display h1 {
+            margin-left: 2rem;
         }
 
 
