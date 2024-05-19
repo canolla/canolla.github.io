@@ -1062,7 +1062,7 @@ width: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 70vh;
+    height: 100vh;
 }
 
 .video-section > div {
@@ -1184,6 +1184,24 @@ width: 50%;
 }
 
 @media only screen and (max-width: 1000px) {
+
+    .left-text p {
+        margin-top: 0.5rem;
+        width: 100%;
+    }
+
+    .nextdoor {
+        margin-bottom: 1rem;
+    }
+
+    .images img {
+        margin-block: 1rem;
+    }
+    
+
+    .video-section {
+        height: 80%;
+    }
 
     #contact h1 {
         font-size: 4vw;
@@ -1376,33 +1394,9 @@ width: 50%;
 
     @media only screen and (max-width: 700px) {
 
-        .contact-email h1{
-            display: none;
-        }
 
-        #contact h1 {
-            font-size: 5vw;
-            }
 
-        .contact-email {
-            flex-direction: column;
-        }
-        
-        .contact-links .bullet-point{
-            display: none;
-        }
-
-        .contact-links {
-            align-items: flex-start;
-        }
-
-        #contact h2{
-            font-size: 1.1rem;
-        }
-
-        .contact-links a{
-            padding-left: 0;
-        }
+   
 
         .about-pic {
             margin-top: 8rem;
@@ -1544,6 +1538,44 @@ width: 50%;
     }
 
     @media only screen and (max-width: 550px) {
+
+
+        #contact h1 {
+            font-size: 7vw;
+            }
+
+        .contact-email {
+            flex-direction: column;
+        }
+        
+        .contact-links .bullet-point{
+            display: none;
+        }
+
+        .contact-links {
+            align-items: flex-start;
+        }
+
+        #contact h2{
+            font-size: 1.1rem;
+        }
+
+        .contact-links a{
+            padding-left: 0;
+        }
+
+        .contact-email{
+            align-items: flex-start;
+            padding-inline: 2rem;
+            border: none;
+        }
+
+        .link-1 {
+            margin-inline: 0;
+        }
+        .link-2 {
+            margin-inline: 0;
+        }
 
         #contact h1 {
             font-size: 6vw;
