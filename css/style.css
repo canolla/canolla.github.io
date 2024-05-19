@@ -785,7 +785,7 @@ width: 50%;
 
 .about-pic {
     width: 30rem;
-    margin-right: 2rem;
+    margin-right: 0rem;
 }
 
 .orange-text {
@@ -923,6 +923,7 @@ width: 50%;
         transform: translateY(100%);
     opacity: 0;
     transition: transform 1s ease-out, opacity 1s ease-out;
+    padding-block: 1rem;
 }
 
 .contact-email a{
@@ -1074,7 +1075,7 @@ width: 50%;
 
     #contact {
         padding-inline: 2rem;
-        height: 15rem;
+        height: 20rem;
     }
 
     .contact-links {
