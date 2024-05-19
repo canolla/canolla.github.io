@@ -785,6 +785,7 @@ width: 50%;
 
 .about-pic {
     width: 30rem;
+    margin-right: 2rem;
 }
 
 .orange-text {
@@ -1070,6 +1071,12 @@ width: 50%;
 
 @media only screen and (max-width: 1300px) {
 
+
+    #contact {
+        padding-inline: 2rem;
+        height: 15rem;
+    }
+
     .contact-links {
         flex-direction: column;
     }
@@ -1152,7 +1159,7 @@ width: 50%;
 
     .about-me-desc p{
         font-size: 1rem;
-        margin-left: 3rem; 
+        margin-left: 2rem; 
         width: 25rem;
         margin-top: 150px;
     }
@@ -1173,7 +1180,6 @@ width: 50%;
     }
 
 
-
 }
 
 @media only screen and (max-width: 1000px) {
@@ -1192,15 +1198,16 @@ width: 50%;
     }
 
     .about-me-desc p{
-        margin-left: 2rem;
-        font-size: 0.8rem;
-        width: 20rem;
+        margin-left: 3rem;
+        font-size: 1rem;
+        width: 25rem;
     }
 
     .about-pic {
         width: 20rem;
         margin-top: 10rem;
         margin-right: 2rem;
+        padding-left: 2rem;
     }
 
 
@@ -1362,6 +1369,10 @@ width: 50%;
 
     @media only screen and (max-width: 700px) {
 
+        #contact h1 {
+            font-size: 5vw;
+            }
+
         .contact-email {
             flex-direction: column;
         }
@@ -1385,6 +1396,7 @@ width: 50%;
         .about-pic {
             margin-top: 8rem;
             margin-right: 0;
+            padding-left: 0;
         }
 
         #checkout-work a {
@@ -1406,7 +1418,7 @@ width: 50%;
         }
 
         .about-me-desc{
-margin-top: 3rem;
+            margin-top: 3rem;
             flex-direction: column-reverse;
         }
     
@@ -1445,7 +1457,7 @@ margin-top: 3rem;
         }
 
         #contact {
-            height: 15rem;
+            height: 20rem;
         }
 
         .about-tags span p{
@@ -1522,6 +1534,10 @@ margin-top: 3rem;
 
     @media only screen and (max-width: 550px) {
 
+        #contact h1 {
+            font-size: 6vw;
+            }
+
         .about-me-desc p{
            width: 20rem;
            font-size: 0.9rem;
@@ -1589,6 +1605,10 @@ margin-top: 3rem;
 
         .about-project2 p{
             font-size: 1.8rem;
+        }
+
+        #project {
+            margin-block: 0rem;
         }
         
 
