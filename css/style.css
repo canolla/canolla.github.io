@@ -384,6 +384,7 @@ font-size: 2.5rem;
 #animatedSvg {
     width: 150px;
     height: 150px;
+    z-index: -1;
 }
 
 #project3 {
