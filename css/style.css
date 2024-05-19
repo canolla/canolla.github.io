@@ -1275,6 +1275,7 @@ width: 50%;
     .para-1 {
         font-size: 0.8rem;
         flex-direction: column;
+        font-size: 0.8rem;
     }
 
     .para-1 p{
@@ -1311,6 +1312,11 @@ width: 50%;
     .para-4 p{
     margin-inline: 0;
     margin-block: 1rem;
+    font-size: 0.8rem;
+    }
+
+    .left-text {
+        font-size: 0.8rem;
     }
 
     .visual-para {
@@ -1330,7 +1336,7 @@ width: 50%;
     }
 
     .images {
-        width: 95%;
+        width: 100%;
     }
 
     .pdf img { 
