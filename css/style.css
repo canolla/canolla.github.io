@@ -145,7 +145,7 @@ ul, li {
     justify-content: left;
     font-size: 4rem;
     font-weight: 500;
-    margin-left: 4rem;
+    margin-left: 2rem;
 }
 
 #work-display h2 {
@@ -261,6 +261,9 @@ ul, li {
 }
 
 .project-section {
+    width: 100%;
+}
+.video-section {
     width: 100%;
 }
 
@@ -414,7 +417,7 @@ font-size: 2.5rem;
     margin-right: auto;
     font-size: 4rem;
     font-weight: 500;
-    margin-bottom: 53px;
+    margin-bottom: 0px;
 }
 
 #contact {
@@ -577,6 +580,10 @@ width: 50%;
     width: 75%;
 }
 
+.nextdoor img {
+    margin-bottom: 0;
+}
+
 .para-1 p{
     width: 100%;
     margin-inline: 2rem;
@@ -678,7 +685,7 @@ width: 50%;
 
 
 .content-section {
-    margin-top: 60px; /* Adjust based on the side menu height */
+    margin-top: 30px; /* Adjust based on the side menu height */
 }
 
 #process-section {
@@ -775,7 +782,7 @@ width: 50%;
     margin-left: auto;
 }
 
-.about-vid {
+.about-pic {
     width: 30rem;
 }
 
@@ -1051,15 +1058,25 @@ width: 50%;
 
 @media only screen and (max-width: 1300px) {
 
+    .contact-links {
+        flex-direction: column;
+    }
+
+    #about-me h1 {
+        margin-left: 4rem;
+    }
+
     #about-intro p {
         font-size: 1.5vw;
     }
 
     .about-me-desc{
-        padding-inline: 3rem;
+        padding-inline: 2rem;
     }
     .about-me-desc p{
         width: 30rem;
+        margin-left: 2rem;
+        margin-top: 200px;
     }
 
     .background-circle {
@@ -1087,13 +1104,11 @@ width: 50%;
 
 @media only screen and (max-width: 1100px) {
 
-    .about-me-desc{
-        padding-inline: 2rem;
-    }
     .about-me-desc p{
-        font-size: 0.8rem;
-        margin-left: auto; 
-        width: 20rem;
+        font-size: 1rem;
+        margin-left: 3rem; 
+        width: 25rem;
+        margin-top: 150px;
     }
     
     .about-me-desc video{
@@ -1112,10 +1127,35 @@ width: 50%;
     }
 
 
+
 }
 
 @media only screen and (max-width: 1000px) {
 
+    #contact h1 {
+        font-size: 4vw;
+        }
+
+    #about-me h1 {
+        margin-left:3rem;
+    }
+
+    .about-me-desc {
+        padding-inline: 0;
+
+    }
+
+    .about-me-desc p{
+        margin-left: 2rem;
+        font-size: 0.8rem;
+        width: 20rem;
+    }
+
+    .about-pic {
+        width: 20rem;
+        margin-top: 10rem;
+        margin-right: 2rem;
+    }
 
 
     #about-me {
@@ -1260,17 +1300,48 @@ width: 50%;
         margin-left: 1rem;
     }
 
+    .about-tags {
+        margin-left: 0;
+    }
+
+
 }
 
 
     @media only screen and (max-width: 700px) {
+
+        .contact-email {
+            flex-direction: column;
+        }
+        
+        .contact-links .bullet-point{
+            display: none;
+        }
+
+        .contact-links {
+            align-items: center;
+        }
+
+        #contact h2{
+            font-size: 1.1rem;
+        }
+
+        .contact-links a{
+            padding-left: 0;
+        }
+
+        .about-pic {
+            margin-top: 8rem;
+            margin-right: 0;
+        }
 
         #checkout-work a {
             margin-top: 1rem;
         }
 
         .b-section-marquee-box {
-            height: 100px;  
+            height: 100px; 
+            margin-top: 50px; 
     
         }
 
@@ -1290,9 +1361,10 @@ margin-top: 3rem;
         .about-me-desc p{
             font-size: 1rem;
             margin-right: 0;
-            text-align: center;
-            margin-left: 0;
+            text-align: left;
+            margin-left: 0rem;
             margin-top: 20px;
+            width: 30rem;
         }
 
         #work-display h1 {
@@ -1305,24 +1377,24 @@ margin-top: 3rem;
             margin-bottom: 0rem;
         }
 
+        .about-project {
+            flex-direction: column;
+            align-items: flex-start;
+            }
+        
+
         #about-me h1 {
             font-size: 3rem;
             font-weight: 500;
             margin-left: 0;
             margin-right: auto;
             margin-left: 2rem;
+            margin-bottom: 0px;
         }
 
         #contact {
             height: 15rem;
         }
-
-        #contact h1 {
-            font-size: 5vw;
-            }
-        #contact h2 {
-            font-size: 4vw;
-            }
 
         .about-tags span p{
             margin: 0;
@@ -1397,11 +1469,7 @@ margin-top: 3rem;
            width: 20rem;
            font-size: 0.9rem;
         }
-    
-    .about-project {
-        flex-direction: column;
-        }
-    
+
 
     .about-project h2 {
         font-size: 3rem;

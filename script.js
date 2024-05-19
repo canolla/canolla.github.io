@@ -174,3 +174,4 @@ document.addEventListener('scroll', function() {
     const newPosition = -3 - (scrollPosition * 0.02);
     backgroundCircle.style.top = `${newPosition}rem`;
 });
+
