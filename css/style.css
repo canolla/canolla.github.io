@@ -1552,6 +1552,10 @@ margin-top: 3rem;
         margin-left: 0rem;
     }
 
+    #animatedSvg {
+    display: none;
+    }
+
 
 }
 
