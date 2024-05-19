@@ -471,7 +471,8 @@ footer {
 
 .copyright {
     display: flex;
-    align-items: end;
+    width: 90%;
+    align-items: baseline;
 }
 
 .visuals img {
@@ -732,26 +733,6 @@ width: 50%;
     flex-direction: row;
     gap: 1rem;
     width: 70%;
-}
-
-.next-project {
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transition: 0.3s;
-}
-
-.next-project a { 
-    text-decoration: none;
-    color: #EB5E28;
-    font-size: 3rem;
-    font-weight: 600;
-    transition: 0.3s;
-}
-
-.next-project a:hover { 
-    color: #ff4800;
 }
 
 #question {
@@ -1053,7 +1034,53 @@ width: 50%;
     width: 75%;
 }
 
+.pagination {
+    display: flex;
+    justify-content: center;
+}
+
+.next-project {
+    display: flex;
+    width: 75%;
+    justify-content: space-between;
+    padding-block: 3rem;
+    font-size: 2rem;
+    text-decoration: none;
+    color: #F1F1E1;
+}
+
+.next-project a {
+    display: flex;
+    text-decoration: none;
+    color: inherit; 
+    flex-direction: row;
+    align-items: center;
+    transition: 0.3s ease-in-out;
+}
+
+.next-project a:hover {
+    color: #EB5E28;
+}
+
+.next-project a:nth-of-type(1) i {
+    margin-right: 1rem;
+}
+.next-project a:nth-of-type(2) i {
+    margin-left: 1rem;
+}
+
+
 @media only screen and (max-width: 1300px) {
+
+    .next-project {
+    width: 90%;
+    }
+
+    .right-text {
+        width: 90%;
+        text-align: left;
+  
+}
 
 
     #about-me h1 {
@@ -1085,12 +1112,17 @@ width: 50%;
 
     .heading-info {
         flex-direction: column;
+        align-items: center;
     }
 
     .para-1 {
         padding-inline: 0;
         }
 
+    .project-title {
+      width: 90%;
+      margin-left: 0;
+    }
     .project-title h1 {
         font-size: 4rem;
     }
@@ -1126,8 +1158,12 @@ width: 50%;
         width: 90%;
     }
 
+    .project-section {
+        width: 90%;
+    }
+
     .project-section h1 {
-        margin-left: 2rem;
+        margin-left: 0rem;
     }
 }
 
@@ -1217,7 +1253,7 @@ width: 50%;
     }
 
     .about-pic {
-        width: 20rem;
+        width: 90%;
         margin-top: 10rem;
         margin-right: 2rem;
         padding-left: 2rem;
@@ -1334,6 +1370,7 @@ width: 50%;
     .para-4 {
         font-size: 0.8rem;
         flex-direction: column;
+        margin-left: 0;
     }
 
     .para-4 p{
@@ -1370,10 +1407,6 @@ width: 50%;
         max-width: 95%;
     }
 
-    .project-title {
-        margin-left: 4rem;
-    }
-
     .about-project2 p {
         margin-left: 1rem;
     }
@@ -1382,11 +1415,33 @@ width: 50%;
         margin-left: 0;
     }
 
+    footer {
+        flex-direction: column;
+        padding-inline: 0;
+        align-items: center;
+    }
+
+    .contact-links {
+        width: 90%;
+    }
+
+    .contact-details {
+        width: 90%;
+    }
+
 
 }
 
 
     @media only screen and (max-width: 700px) {
+
+        .next-project {
+            font-size: 5vw;
+        }
+
+        .side-imgs {
+            flex-direction: column;
+        }
 
         .about-me-layout { 
             margin-bottom: 5rem;
@@ -1395,10 +1450,6 @@ width: 50%;
 
         .contact-details h2 {
             font-size: 1.5rem;
-        }
-
-        footer {
-            flex-direction: column;
         }
 
         .link-1 {
@@ -1446,7 +1497,7 @@ width: 50%;
             text-align: left;
             margin-left: 0rem;
             margin-top: 20px;
-            width: 30rem;
+            width: 90%;
         }
 
         #work-display h1 {
@@ -1532,15 +1583,12 @@ width: 50%;
         .project-title h1 {
             font-size: 3rem;
         }
-        .project-title {
-            margin-left: 2rem;
-        }
+
         .about-project2 p {
             margin-left: 1rem;
         }
 
         .project-section h1 {
-            margin-left: 1rem;
             font-size: 3rem;
         }
 
@@ -1548,8 +1596,18 @@ width: 50%;
 
     @media only screen and (max-width: 550px) {
 
-        .about-me-desc p{
-            width: 20rem;
+        .side-imgs-2 {
+            flex-direction: column;
+        }
+        .side-imgs-2 :nth-child(1){
+        padding-right: 0;
+        }
+        .side-imgs-2 :nth-child(2){
+        padding-left: 0;
+        }
+
+        .nextdoor {
+            flex-direction: column;
         }
 
         #work-display h1 {
