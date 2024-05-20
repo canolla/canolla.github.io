@@ -429,35 +429,35 @@ footer {
     align-items: left;
     justify-content: space-between;
     width: 100%;
-    background-color: #252422;
-    color: #F1F1E1;
-    border-top: solid #EB5E28 1px;
+    background-color: #F1F1E1;
+    color: #252422;
     padding-inline: 4rem;
 }
 
 .contact-details {
     display: flex;
-    flex-direction: row;
-    align-items: center;
+    flex-direction: column;
+    align-items: baseline;
+    margin-bottom: 2rem;
 }
 
 .contact-links {
     display: flex;
-    align-items: center;
+    align-items: baseline;
     justify-content: space-around;
+    margin-bottom: 1rem;
 }
 
 
 
 .contact-details h1 {
-    font-size: 2.5rem;
-    margin-right: 1rem;
+    font-size: 4rem;
 }
 
 .contact-details h2 {
     font-size: 2rem;
     margin-right: 1rem;
-    color: #F1F1E1;
+    color: #252422;
     transition: 0.3s ease-in-out;
     text-decoration: underline;
 }
@@ -471,8 +471,9 @@ footer {
 
 .copyright {
     display: flex;
-    width: 90%;
+    width: 100%;
     align-items: baseline;
+    border-top: #252422 solid 1px;
 }
 
 .visuals img {
@@ -1042,7 +1043,7 @@ width: 50%;
 
 .next-project {
     display: flex;
-    width: 75%;
+    width: 90%;
     justify-content: space-between;
     padding-block: 3rem;
     font-size: 2rem;
@@ -1430,11 +1431,19 @@ width: 50%;
         width: 90%;
     }
 
+    .copyright {
+        width: 90%;
+    }
+
 
 }
 
 
     @media only screen and (max-width: 700px) {
+
+        .contact-details h1 {
+            font-size: 3rem;
+        }
 
         .next-project {
             font-size: 5vw;
