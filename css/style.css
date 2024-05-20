@@ -1217,7 +1217,10 @@ width: 50%;
 
     #work-display h1 {
 
-        margin-left: 3rem;
+
+            width: 90%;
+            margin-left: auto;
+            margin-right: auto;
     }
 
 
@@ -1241,7 +1244,9 @@ width: 50%;
 
 
     #about-me h1 {
-        margin-left:3rem;
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
     }
 
     .about-me-desc {
@@ -1517,7 +1522,6 @@ width: 50%;
             justify-content: left;
             font-size: 3rem;
             font-weight: 500;
-            margin-left: 2rem;
             margin-bottom: 0rem;
         }
 
@@ -1530,10 +1534,6 @@ width: 50%;
         #about-me h1 {
             font-size: 3rem;
             font-weight: 500;
-            margin-left: 0;
-            margin-right: auto;
-            margin-left: 2rem;
-            margin-bottom: 0px;
         }
 
         .about-tags span p{
@@ -1588,7 +1588,7 @@ width: 50%;
 
         #project3 {
             margin-block: 0;
-            margin-top: 3rem;
+            margin-top: 0rem;
         }
 
         .project-title h1 {
@@ -1622,7 +1622,9 @@ width: 50%;
         }
 
         #work-display h1 {
-            margin-left: 2rem;
+            width: 90%;
+            margin-left: auto;
+            margin-right: auto;
         }
 
 
