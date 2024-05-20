@@ -1083,7 +1083,7 @@ width: 50%;
 
   .image-slides img {
     display: block;
-    width: 100%;
+    width: 100% !important;
   }
   
   section {
@@ -1095,11 +1095,6 @@ width: 50%;
     display: flex;
     width: 350%;
     animation: bannermove 30s linear infinite;
-  }
-  
-  article.paused {
-    -webkit-animation-play-state: paused;
-    animation-play-state: paused;
   }
   
   .image-slides div {
@@ -1277,6 +1272,10 @@ width: 50%;
 }
 
 @media only screen and (max-width: 1000px) {
+
+    article {
+        width: 400%;
+    }
 
     #work-display h1 {
 
@@ -1510,6 +1509,10 @@ width: 50%;
 
     @media only screen and (max-width: 700px) {
 
+        article {
+            width: 600%;
+        }
+
         .contact-details h1 {
             font-size: 3rem;
         }
@@ -1669,6 +1672,10 @@ width: 50%;
     }
 
     @media only screen and (max-width: 550px) {
+
+        article {
+            width: 700%;
+        }
 
         .side-imgs-2 {
             flex-direction: column;
