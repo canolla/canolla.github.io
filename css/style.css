@@ -1536,10 +1536,15 @@ width: 50%;
             font-weight: 500;
         }
 
+        #homepage-tags {
+            display: none;
+        }
+
         .about-tags span p{
             margin: 0;
             font-size: 0.8rem;
         }
+
         .hobby-tags span p{
             margin: 0;
             font-size: 0.8rem;
