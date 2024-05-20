@@ -1076,6 +1076,10 @@ width: 50%;
 
 @media only screen and (max-width: 1300px) {
 
+    .lotties {
+        width: 90%;
+    }
+
     .next-project {
     width: 90%;
     }
