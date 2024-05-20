@@ -181,13 +181,13 @@ ul, li {
 }
 
 .about-tags span{
-    color: #F1F1E1;
+    color: #252422;
+    background-color: #F1F1E1;
     border-radius: 10px;
     display: inline-block;
     padding-inline: 0.7rem;
     padding-block: 0.5rem;
     margin-block: 1rem;
-    border: solid 1px #EB5E28
 }
 
 .about-tags span p{
