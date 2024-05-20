@@ -17,7 +17,7 @@ body {
     width: 100%;
     margin: 0;   
     background-color: #252422;
-    color: #FFFCF2;
+    color: #F1F1E1;
     padding-top: 4rem;
 }
 
@@ -51,7 +51,7 @@ ul, li {
     top: 0;
     width: 100%;
     background-color: #252422;
-    color: #FFFCF2;
+    color: #F1F1E1;
     border-bottom: solid #EB5E28 1px;
     padding-block: 1rem;
     padding-inline: 4rem;
@@ -76,7 +76,7 @@ ul, li {
 }
 
 #navbar a {
-    color: #FFFCF2;
+    color: #F1F1E1;
     text-decoration: none;
     transition: 0.3s;
 }
@@ -120,7 +120,7 @@ ul, li {
 
 #checkout-work i {
     transition: color ease-in-out 0.3s, transform ease-in-out 0.3s; /* Add transition properties */
-    color: #FFFCF2;
+    color: #F1F1E1;
 }
 
 #checkout-work i:hover{
@@ -181,7 +181,7 @@ ul, li {
 }
 
 .about-tags span{
-    color: #FFFCF2;
+    color: #F1F1E1;
     border-radius: 10px;
     display: inline-block;
     padding-inline: 0.7rem;
@@ -207,7 +207,7 @@ ul, li {
     overflow: hidden;   
     z-index: -1;
     width: 100%;
-    border-block: solid 1px #fffcf2;
+    border-block: solid 1px #F1F1E1;
     margin-top: 40px;
 }
 
@@ -295,7 +295,7 @@ ul, li {
 }
 
 .hobby-tags span{
-    color: #FFFCF2;
+    color: #F1F1E1;
     border-radius: 20px;
     border-color: #EB5E28;
     display: inline-block;
@@ -630,7 +630,7 @@ width: 50%;
     top: 10px;
     right: 15px;
     font-size: 30px;
-    color: #FFFCF2;
+    color: #F1F1E1;
 }
 
 /* side menu */
@@ -713,7 +713,7 @@ width: 50%;
 .process-content {
     width: 75%;
     border-radius: 3rem;
-    color: #FFFCF2;
+    color: #F1F1E1;
     margin-block: 3rem;
 }
 
@@ -869,7 +869,7 @@ width: 50%;
     width: 20px;
     height: 20px;
     opacity: 0.7;
-    background-color: #FFFCF2;
+    background-color: #F1F1E1;
     border-radius: 50%;
     position: absolute;
     transition-duration: 200ms;
@@ -977,7 +977,7 @@ width: 50%;
 }
 
 .process-content a:hover {
-    color: #FFFCF2;
+    color: #F1F1E1;
 }
 
 .side-imgs {
@@ -1273,7 +1273,7 @@ width: 50%;
 
 
     .orange-text {
-        color: #FFFCF2;
+        color: #F1F1E1;
     }
 
     #header-section {
