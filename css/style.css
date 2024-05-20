@@ -265,9 +265,6 @@ ul, li {
     margin-top: 5rem;
     border-top: #F1F1E1 solid 1px;
 }
-.video-section {
-    width: 100%;
-}
 
 .project-section h1 {
     display: flex;
@@ -1038,7 +1035,8 @@ width: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    height: 85vh;
+    width: 100%;
 }
 
 .video-section > div {
