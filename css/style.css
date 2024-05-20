@@ -590,17 +590,23 @@ width: 50%;
     margin-inline: 3rem;
 }
 
+.project-video {
+    width: 75%;
+    margin-block: 3rem;
+}
+
 /* image overlay */
 
 .enlargeable {
-    width: 200px; /* Set initial width */
+    width: auto; /* Set initial width */
     height: auto;
-    margin: 10px;
-    transition: width 0.3s ease; /* Add a smooth transition effect */
+    transition: opacity 0.3s ease-in-out;
+    display: block;
+    position: relative; /* Make sure the parent element is positioned */
 }
 
-.enlarged {
-    width: 400px; /* Set enlarged width */
+.enlargeable:hover {
+    opacity: 0.75;
 }
 
 .overlay {
@@ -1074,6 +1080,53 @@ width: 50%;
 .next-project a:nth-of-type(2) i {
     margin-left: 1rem;
 }
+
+/* Carasoul Code */
+
+  .image-slides img {
+    display: block;
+    width: 100%;
+  }
+  
+  section {
+    width: 100%;
+    overflow: hidden;
+  }
+  
+  article {
+    display: flex;
+    width: 350%;
+    animation: bannermove 30s linear infinite;
+  }
+  
+  article.paused {
+    -webkit-animation-play-state: paused;
+    animation-play-state: paused;
+  }
+  
+  .image-slides div {
+    width: 100%;
+  }
+  
+  .image-slides ul {
+    display: flex;
+    list-style-type: none;
+    padding-left: 0;
+    margin: 0;
+  }
+  
+  .image-slides li {
+    width: 100%;
+  }
+  
+  @keyframes "bannermove" {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-50%);
+    }
+  }
 
 
 @media only screen and (max-width: 1300px) {

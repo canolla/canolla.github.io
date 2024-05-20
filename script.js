@@ -175,3 +175,7 @@ document.addEventListener('scroll', function() {
     backgroundCircle.style.top = `${newPosition}rem`;
 });
 
+
+$('button').click(function() {
+    $("article").toggleClass("paused")
+  });
