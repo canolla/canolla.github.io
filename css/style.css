@@ -1036,8 +1036,9 @@ width: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 85vh;
     width: 100%;
+    margin-top: 3rem;
+    margin-bottom: 1rem;
 }
 
 .video-section > div {
@@ -1299,12 +1300,10 @@ width: 50%;
     .images img {
         margin-top: 1rem;
     }
-    
 
     .video-section {
-        height: 80%;
+        margin-top: 1rem;
     }
-
 
     #about-me h1 {
         width: 90%;
