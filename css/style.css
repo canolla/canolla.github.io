@@ -496,7 +496,8 @@ margin-inline: auto;
 .images img{
     width: 75%;
     margin-inline: auto;
-    margin-block: 3rem;
+    margin-top: 3rem;
+    margin-bottom: 1rem;
 }
 video{
     width: 100%;
@@ -1296,7 +1297,7 @@ width: 50%;
     }
 
     .images img {
-        margin-block: 1rem;
+        margin-top: 1rem;
     }
     
 
