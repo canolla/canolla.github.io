@@ -1425,6 +1425,13 @@ width: 50%;
         margin-block: 0;
 
     }
+    #project4 {
+        width: 90%;
+        margin-right: auto;
+        margin-left: auto;
+        margin-block: 0;
+
+    }
     
     .para-1 {
         font-size: 0.8rem;
