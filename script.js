@@ -166,16 +166,30 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 
 
-document.addEventListener('scroll', function() {
-    const scrollPosition = window.scrollY;
-    const backgroundCircle = document.querySelector('.background-circle');
+let latestKnownScrollY = 0;
+let ticking = false;
 
-    // Adjust the multiplier (0.5) to control the speed of the upward movement
-    const newPosition = -3 - (scrollPosition * 0.02);
-    backgroundCircle.style.top = `${newPosition}rem`;
+document.addEventListener('scroll', function() {
+    latestKnownScrollY = window.scrollY;
+    requestTick();
 });
 
+function requestTick() {
+    if (!ticking) {
+        requestAnimationFrame(updatePosition);
+    }
+    ticking = true;
+}
 
+function updatePosition() {
+    const scrollPosition = latestKnownScrollY;
+    const backgroundCircle = document.querySelector('.background-circle');
+    const newPosition = -3 - (scrollPosition * 0.02);
+    backgroundCircle.style.top = `${newPosition}rem`;
+    ticking = false;
+}
+
+// Toggle paused class on button click
 $('button').click(function() {
-    $("article").toggleClass("paused")
-  });
+    $("article").toggleClass("paused");
+});
