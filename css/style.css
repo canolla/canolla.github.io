@@ -1062,10 +1062,7 @@ width: 50%;
     margin-bottom: 1rem;
 }
 
-.video-section > div {
-    position: relative;
-    width: 75%;
-}
+
 
 .pagination {
     display: flex;
@@ -1767,6 +1764,52 @@ width: 50%;
             height: 50rem;
             width: 50rem;
         }
+
+        #project {
+            width: 50%;
+            margin-block: 0rem;
+        }
+        #project2 {
+            width: 50%;
+        }
+        #project3 {
+            width: 50%;
+        }
+        .images img {
+            width: 60%;
+        }
+        .para-1 {
+            width: 60%;
+        }
+
+        .left-text {
+            width: 60%;
+        }
+
+        .video-section > div {
+            width: 60%;
+        }
+        
+        .nextdoor {
+            width: 60%;
+        }
+
+        .lotties {
+            width: 60%;
+        }
+
+        #about-intro p {
+            max-width: 39vw;
+            font-size: 1.4vw;
+        }
+
+        #header-section {
+            padding-top: 7rem;
+        }
+
+        #header-section h1{
+            font-size: 4vw;
+        }
     
     }
         
@@ -1789,9 +1832,5 @@ width: 50%;
             font-size: 1.8rem;
         }
 
-        #project {
-            margin-block: 0rem;
-        }
-        
 
 }
