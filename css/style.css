@@ -1131,6 +1131,17 @@ width: 50%;
   .image-slides li {
     width: 100%;
   }
+
+  .note {
+    color: #F1F1E1;
+    text-decoration: underline;
+    font-size: 1.3rem;
+    width: fit-content;
+    margin-top: 3rem;
+    margin-inline: auto;
+    padding-inline: 1rem;
+    border-radius: 1rem;
+  }
   
   @keyframes bannermove {
     0% {
@@ -1205,6 +1216,9 @@ width: 50%;
     }
     .project-title h1 {
         font-size: 4rem;
+    }
+    .note {
+        font-size: 1rem;
     }
 
     .images img{
@@ -1690,6 +1704,10 @@ width: 50%;
             font-size: 3rem;
         }
 
+        .note {
+            font-size: 0.8rem;
+        }
+
         .about-project2 p {
             margin-left: 1rem;
         }
@@ -1740,6 +1758,10 @@ width: 50%;
 
     .project-title h1 {
         font-size: 3rem;
+    }
+
+    .note {
+        font-size: 0.6rem;
     }
 
     .about-tags span p{
