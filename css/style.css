@@ -1116,6 +1116,11 @@ width: 50%;
     width: 350%;
     animation: bannermove 30s linear infinite;
   }
+  .article2 {
+    display: flex;
+    width: 450%;
+    animation: bannermove 30s linear infinite;
+  }
   
   .image-slides div {
     width: 100%;
