@@ -71,7 +71,7 @@ ul, li {
 #navbar ul {
     display: flex;
     justify-content: space-between;
-    width: 20rem;
+    width: 10rem;
     list-style: none;
 }
 
@@ -1691,7 +1691,7 @@ width: 50%;
         }
 
         #navbar ul{
-            width: 12rem;
+            width: 9rem;
         }
 
 
