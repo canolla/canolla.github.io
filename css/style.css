@@ -1791,6 +1791,10 @@ width: 50%;
 
     @media screen and (min-width: 1600px) {
 
+        .video-section {
+            min-width: 60%;
+        }
+
         .background-circle {
             height: 50rem;
             width: 50rem;
